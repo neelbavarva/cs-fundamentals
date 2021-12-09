@@ -50,3 +50,25 @@ Network bandwidth is a measurement indicating the maximum capacity of a wired or
 Information is transported from your computer in data packets across the internet. They are usually sent at regular intervals and take a set amount of time. Jitter is when there is a time delay in the sending of these data packets over your network connection. This is often caused by network congestion, and sometimes route changes. <br>
 
 Essentially, the longer data packets take to arrive, the more jitter can negatively impact the video and audio quality.
+
+### Packets
+A packet is a small segment of a larger message. Data sent over computer networks*, is divided into packets. These packets are then recombined by the computer or device that receives them.
+
+### Frame 
+In networking, a frame is a unit of data. A frame works to help identify data packets used in networking and telecommunications structures. Frames also help to determine how data receivers interpret a stream of data from a source. <br>
+
+One way to define frames in networking is that the frame is a primary data unit within Level 2, or the data link layer of the OSI model. By contrast, Level 3, or the networking layer of the OSI model uses the packet as a primary data unit.<br>
+
+Frames and packets may have different terminology attached to their use depending on the context or industry in question. In general, the frame is a formatting resource for data that needs to be split up into recognizable pieces in order to be interpreted by a receiver.
+
+### Bit Rate
+Network connections can send bits very fast. We measure that speed using the bit rate, the number of bits of data that are sent each second.
+
+### Noise
+Noise is any undesired signal in a communication circuit. Another definition calls noise unwanted disturbances superimposed on a useful signal, which tends to obscure its information content. There are many varieties of noise; however, the four most important to the telecommunication/data communication technologist are thermal noise, intermodulation noise, crosstalk and impulse noise.
+
+### Attenuation
+Attenuation is the loss of signal strength in networking cables or connections. This typically is measured in decibels (dB) or voltage and can occur due to a variety of factors. It may cause signals to become distorted or indiscernible. An example of this is Wi-Fi signal and strength getting noticeably weaker the further that your device is from the router. 
+
+### Distortion
+Distortion is a term used to describe an interruption of transmitting signals that cause an unclear reception. Distortion is commonly found in sound generated or received by a computer, video or display signals and data cables such as network cables.
