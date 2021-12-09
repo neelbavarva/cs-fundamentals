@@ -2,6 +2,8 @@
 
 Computer networking refers to connected computing devices (such as laptops, desktops, servers, smartphones, and tablets) and an ever-expanding array of IoT devices (such as cameras, door locks, doorbells, refrigerators, audio/visual systems, thermostats, and various sensors) that communicate with one another.
 
+<hr>
+
 ## Basic Terms
 
 ### Client
@@ -13,8 +15,6 @@ A server is a physical computer dedicated to run services to serve the needs of 
 ### Host
 A host is a computer, connected to other computers for which it provides data or services over a network. In theory, every computer connected to a network acts as a host to other peers on the network. In essence, a host reflects the logical relationship of two or more computers on a network. <br><br>
 To simplify this, suppose you want to download an image from another computer on your network. That computer is “hosting” the image and therefore, it is the host computer. On the other hand, if that same computer downloads an image from your computer, your computer becomes the host computer.
-
-<hr>
 
 ### Q. Difference between a Server and a Host
 A server:
@@ -29,8 +29,6 @@ A host:
 - Can run both server and client programs
 - Provides specific services
 - Serves multiple users and devices
-
-<hr>
 
 ### Peer
 A peer is something or someone that is an equal member of a group, where there's some kind of relationship between the members of the group.
@@ -72,3 +70,74 @@ Attenuation is the loss of signal strength in networking cables or connections. 
 
 ### Distortion
 Distortion is a term used to describe an interruption of transmitting signals that cause an unclear reception. Distortion is commonly found in sound generated or received by a computer, video or display signals and data cables such as network cables.
+
+<hr>
+
+## What’s difference between The Internet and The Web ?
+The Internet is a global network of networks while the Web, also referred formally as World Wide Web (www) is a collection of information that is accessed via the Internet. Another way to look at this difference is; the Internet is infrastructure while the Web is served on top of that infrastructure.
+
+<hr>
+
+## Types of Transmission Media
+Transmission medium is a physical path between the transmitter and the receiver. Transmission Media is broadly classified into the following types:  
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20201030064943/TypesOfTransmissionMedia.jpg" />
+
+<hr>
+
+## Unicast, Broadcast and Multicast
+
+### Unicast
+- single sender and single recipient
+- one-to-one transmission
+
+### Broadcast
+- one-to-one transmission
+
+### Multicast
+- one/more senders and one/more recipients participate
+- in this method traffic recline between the boundaries of unicast (one-to-one) and broadcast (one-to-all)
+
+<hr>
+
+## Network Topology
+
+Network topologies describe the methods in which all the elements of a network are mapped. The topology term refers to both the physical and logical layout of a network.
+
+<img src="https://www.guru99.com/images/2/network_topology.png" />
+
+### P2P
+The network consists of a direct link between two computers
+
+### Bus
+Uses a single cable which connects all the included nodes
+
+### Ring
+Every device has exactly two neighboring devices for communication purpose
+
+### Star
+All the computers connect with the help of a hub.
+
+### Mesh
+The mesh topology has a unique network design in which each computer on the network connects to every other.
+
+### Tree
+Tree topologies have a root node, and all other nodes are connected which forming a hierarchy.
+
+### Hybrid
+Hybrid topology combines two or more topologies	.
+
+<hr>
+
+## LAN, MAN and WAN
+
+### LAN
+LAN stands for local area network. It is a group of network devices that allow communication between various connected devices. Private ownership has control over the local area network rather than the public. LAN has a short propagation delay than MAN as well as WAN. It covers the smaller area such as colleges, schools, hospitals, and so on. 
+
+### MAN
+MAN stands for metropolitan area network. It covers the larger area than LAN such as small towns, cities, etc. MAN connects two or more computers that reside within the same or completely different cities. MAN is expensive and should or might not be owned by one organization. 
+
+### WAN
+WAN stands for wide area network. It covers a large area than LAN as well as a MAN such as country/continent etc. WAN is expensive and should or might not be owned by one organization. PSTN or satellite medium is used for wide area networks. 
+
+![image](https://user-images.githubusercontent.com/62550592/145455705-17ea35d1-39d2-4fdc-8bed-89c3eadb86ee.png)
+
