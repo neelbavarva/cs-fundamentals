@@ -7,3 +7,6 @@ Physical -> Data Link -> Network -> Transport -> Session -> Presentation -> Appl
 
 <img src="https://www.tutorialandexample.com/wp-content/uploads/2020/10/image-201.png" />
 
+## Application Layer
+
+At this layer, both the end user and the application layer interact directly with the software application. This layer sees network services provided to end-user applications such as a web browser or Office 365.
