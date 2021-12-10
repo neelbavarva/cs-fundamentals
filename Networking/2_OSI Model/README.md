@@ -94,3 +94,16 @@ It stands for Dynamic Host Configuration Protocol (DHCP). It gives IP addresses 
 ```
 clear ip dhcp binding {address | * }
 ```
+
+### DNS
+
+DNS is a host name to IP address translation service. DNS is a distributed database implemented in a hierarchy of name servers.
+
+Every host is identified by the IP address but remembering numbers is very difficult for the people and also the IP addresses are not static therefore a mapping is required to change the domain name to IP address. So DNS is used to convert the domain name of the websites to their numerical IP address.
+
+<h4>Domain:</h4>
+
+1. Generic domain : .com(commercial) .edu(educational) .mil(military) .org(non profit organization) .net(similar to commercial) all these are generic domain.
+2. Country domain .in (india) .us .uk
+3. Inverse domain if we want to know what is the domain name of the website. Ip to domain name mapping.So DNS can provide both the mapping for example to find the ip addresses of geeksforgeeks.org then we have to type nslookup www.geeksforgeeks.org.
+
