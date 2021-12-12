@@ -107,3 +107,22 @@ Every host is identified by the IP address but remembering numbers is very diffi
 2. Country domain .in (india) .us .uk
 3. Inverse domain if we want to know what is the domain name of the website. Ip to domain name mapping.So DNS can provide both the mapping for example to find the ip addresses of geeksforgeeks.org then we have to type nslookup www.geeksforgeeks.org.
 
+<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2017/02/DNS_2.png" />
+
+<h4>Hierarchy of Name Servers</h4>
+
+<h5>1. Root name servers</h5> 
+
+It is contacted by name servers that can not resolve the name. It contacts authoritative name server if name mapping is not known. It then gets the mapping and return the IP address to the host.
+
+<h5>2. Top level server</h5> 
+
+It is responsible for com, org, edu etc and all top level country domains like uk, fr, ca, in etc. They have info about authoritative domain servers and know names and IP addresses of each authoritative name server for the second level domains.
+
+<h5>3. Authoritative name servers</h5> 
+
+This is organization’s DNS server, providing authoritative hostName to IP mapping for organization servers. It can be maintained by organization or service provider. In order to reach cse.dtu.in we have to ask the root DNS server, then it will point out to the top level domain server and then to authoritative domain name server which actually contains the IP address. So the authoritative domain server will return the associative ip address.
+
+<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2017/02/DNS_3.png" />
+
+The client machine sends a request to the local name server, which , if root does not find the address in its database, sends a request to the root name server , which in turn, will route the query to an intermediate or authoritative name server. The root name server can also contain some hostName to IP address mappings . The intermediate name server always knows who the authoritative name server is. So finally the IP address is returned to the local name server which in turn returns the IP address to the host.
