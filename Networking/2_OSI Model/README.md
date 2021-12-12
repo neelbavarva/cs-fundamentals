@@ -126,3 +126,14 @@ This is organization’s DNS server, providing authoritative hostName to IP mapp
 <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2017/02/DNS_3.png" />
 
 The client machine sends a request to the local name server, which , if root does not find the address in its database, sends a request to the root name server , which in turn, will route the query to an intermediate or authoritative name server. The root name server can also contain some hostName to IP address mappings . The intermediate name server always knows who the authoritative name server is. So finally the IP address is returned to the local name server which in turn returns the IP address to the host.
+
+### Why does DNS use UDP and not TCP?
+
+DNS is an application layer protocol. All application layer protocols use one of the two transport layer protocols, UDP(User Datagram Protocol) and TCP(Transmission Control Protocol). TCP is reliable and UDP is not reliable. DNS is supposed to be reliable, but it uses UDP, why? 
+
+There are the following interesting facts about TCP and UDP on the transport layer that justify the above.
+1. UDP is much faster. TCP is slow as it requires a 3-way handshake. The load on DNS servers is also an important factor. DNS servers (since they use UDP) don’t have to keep connections. 
+2. DNS requests are generally very small and fit well within UDP segments. 
+3. UDP is not reliable, but reliability can be added to the application layer. An application can use UDP and can be reliable by using a timeout and resend at the application layer. 
+
+Actually, DNS primarily uses the User Datagram Protocol (UDP) on port number 53 to serve requests. DNS queries consist of a single UDP request from the client followed by a single UDP reply from the server. When the length of the answer exceeds 512 bytes and both client and server support EDNS, larger UDP packets are used. Otherwise, the query is sent again using the Transmission Control Protocol (TCP). TCP is also used for tasks such as zone transfers. Some resolver implementations use TCP for all queries. 
