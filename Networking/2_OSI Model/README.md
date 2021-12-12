@@ -5,135 +5,65 @@ OSI(Open System Interconnection) : The purpose of the OSI model is to facilitate
 
 Physical -> Data Link -> Network -> Transport -> Session -> Presentation -> Application
 
-<img src="https://www.tutorialandexample.com/wp-content/uploads/2020/10/image-201.png" />
+<div align="left">
+  <img height=400 src="https://www.tutorialandexample.com/wp-content/uploads/2020/10/image-201.png" />
+  <img height=400 src="https://media.geeksforgeeks.org/wp-content/uploads/computer-network-osi-model-layers.png" />
+</div>
 
-## Application Layer
+## Physical Layer
 
-At this layer, both the end user and the application layer interact directly with the software application. This layer sees network services provided to end-user applications such as a web browser or Office 365.
+The lowest layer of the OSI reference model is the physical layer. It is responsible for the actual physical connection between the devices. The physical layer contains information in the form of bits. It is responsible for transmitting individual bits from one node to the next. When receiving data, this layer will get the signal received and convert it into 0s and 1s and send them to the Data Link layer, which will put the frame back together. 
 
-### Protocols in Application Layer
+The functions of the physical layer are :  
 
-<h5> 1. TELNET </h5>
+<strong>1. Bit synchronization</strong> : The physical layer provides the synchronization of the bits by providing a clock. This clock controls both sender and receiver thus providing synchronization at bit level.
 
-Telnet stands for the TELetype NETwork. It helps in terminal emulation. It allows Telnet clients to access the resources of the Telnet server. It is used for managing files on the internet. It is used for the initial setup of devices like switches. The telnet command is a command that uses the Telnet protocol to communicate with a remote device or system. Port number of telnet is 23. 
+<strong>2. Bit rate control</strong> : The Physical layer also defines the transmission rate i.e. the number of bits sent per second.
 
-```
-telnet [\\RemoteServer]
-\\RemoteServer   : Specifies the name of the server to which you want to connect
-```
+<strong>3. Physical topologies</strong> : Physical layer specifies the way in which the different, devices/nodes are arranged in a network i.e. bus, star, or mesh topology.
 
-<h5> 2. FTP </h5>
+<strong>4. Transmission mode</strong> : Physical layer also defines the way in which the data flows between the two connected devices. The various transmission modes possible are Simplex, half-duplex and full-duplex.
 
-FTP stands for file transfer protocol. It is the protocol that actually lets us transfer files. It can facilitate this between any two machines using it. But FTP is not just a protocol but it is also a program. FTP promotes sharing of files via remote computers with reliable and efficient data transfer. The Port number for FTP is 20 for data and 21 for control.
+## Data Link Layer
 
-```
-ftp machinename
-```
+The data link layer is responsible for the node-to-node delivery of the message. The main function of this layer is to make sure data transfer is error-free from one node to another, over the physical layer. When a packet arrives in a network, it is the responsibility of DLL to transmit it to the Host using its MAC address. 
 
-<h5> 3. TFTP </h5>
+Data Link Layer is divided into two sublayers:  
 
-The Trivial File Transfer Protocol (TFTP) is the stripped-down, stock version of FTP, but it’s the protocol of choice if you know exactly what you want and where to find it. It’s a technology for transferring files between network devices and is a simplified version of FTP. The Port number for TFTP is 69.
+<strong>1. Logical Link Control (LLC)</strong><br>
+<strong>2. Media Access Control (MAC)</strong>
 
-```
-tftp [ options... ] [host [port]] [-c command] 
-```
+The packet received from the Network layer is further divided into frames depending on the frame size of NIC(Network Interface Card). DLL also encapsulates Sender and Receiver’s MAC address in the header. 
 
-<h5> 4. NFS </h5>
+The functions of the Data Link layer are :  
 
-It stands for a network file system. It allows remote hosts to mount file systems over a network and interact with those file systems as though they are mounted locally. This enables system administrators to consolidate resources onto centralized servers on the network. The Port number for NFS is 2049.
+<strong>1. Framing</strong> : Framing is a function of the data link layer. It provides a way for a sender to transmit a set of bits that are meaningful to the receiver. This can be accomplished by attaching special bit patterns to the beginning and end of the frame.
 
-```
-service nfs start
-```
+<strong>2. Physical addressing</strong> : After creating frames, the Data link layer adds physical addresses (MAC address) of the sender and/or receiver in the header of each frame.
 
-<h5> 5. SMTP </h5>
+<strong>3. Error control</strong> : Data link layer provides the mechanism of error control in which it detects and retransmits damaged or lost frames.
 
-It stands for Simple Mail Transfer Protocol. It is a part of the TCP/IP protocol. Using a process called “store and forward,” SMTP moves your email on and across networks. It works closely with something called the Mail Transfer Agent (MTA) to send your communication to the right computer and email inbox. The Port number for SMTP is 25. 
+<strong>4. Flow Control</strong> : The data rate must be constant on both sides else the data may get corrupted thus, flow control coordinates the amount of data that can be sent before receiving acknowledgement.
 
-```
-MAIL FROM:<mail@abc.com?
-```
+<strong>5. Access control</strong> : When a single communication channel is shared by multiple devices, the MAC sub-layer of the data link layer helps to determine which device has control over the channel at a given time.
 
-<h5> 6. LPD </h5>
+*** _Packet in Data Link layer is referred to as Frame. <br>
+*** Data Link layer is handled by the NIC (Network Interface Card) and device drivers of host machines. <br>
+*** Switch & Bridge are Data Link Layer devices._
 
-It stands for Line Printer Daemon. It is designed for printer sharing. It is the part that receives and processes the request. A “daemon” is a server or agent. The Port number for LPD is 515. 
+<hr>
 
-```
-lpd [ -d ] [ -l ] [ -D DebugOutputFile]
-```
+### What Is Ethernet?
 
-<h5> 7. X window </h5>
+Ethernet is the most widely used LAN technology, which is defined under IEEE standards 802.3. The reason behind its wide usability is Ethernet is easy to understand, implement, maintain, and allows low-cost network implementation. Also, Ethernet offers flexibility in terms of topologies that are allowed. Ethernet generally uses Bus Topology. Ethernet operates in two layers of the OSI model, Physical Layer, and Data Link Layer. For Ethernet, the protocol data unit is Frame since we mainly deal with DLL. In order to handle collision, the Access control mechanism used in Ethernet is CSMA/CD. Manchester Encoding Technique is used in Ethernet. 
 
-It defines a protocol for the writing of graphical user interface–based client/server applications. The idea is to allow a program, called a client, to run on one computer. It is primarily used in networks of interconnected mainframes. Port number for X window starts from 6000 and increases by 1 for each server.
+### Difference between Internet, Intranet and Extranet
 
-```
-Run xdm in runlevel 5 
-```
+<strong>1. Internet</strong> : The network formed by the co-operative interconnection of millions of computers, linked together is called Internet.
 
-<h5> 8. SNMP </h5>
+<strong>2. Intranet</strong> : It is an internal private network built within an organization using Internet and World Wide Web standards and products that allows employees of an organization to gain access to corporate information. 
 
-It stands for Simple Network Management Protocol. It gathers data by polling the devices on the network from a management station at fixed or random intervals, requiring them to disclose certain information. It is a way that servers can share information about their current state, and also a channel through which an administrate can modify pre-defined values. The Port number of SNMP is 161(TCP) and 162(UDP). 
+<strong>3. Extranet</strong> : It is the type of network that allows users from outside to access the Intranet of an organization. 
 
-```
-snmpget -mALL -v1 -cpublic snmp_agent_Ip_address sysName.0
-```
+<hr>
 
-<h5> 9. DNS </h5>
-
-It stands for Domain Name System. Every time you use a domain name, therefore, a DNS service must translate the name into the corresponding IP address. For example, the domain name www.abc.com might translate to 198.105.232.4. 
-The Port number for DNS is 53. 
-
-```
-ipconfig /flushdns
-```
-
-<h5> 10. DHCP </h5>
-
-It stands for Dynamic Host Configuration Protocol (DHCP). It gives IP addresses to hosts. There is a lot of information a DHCP server can provide to a host when the host is registering for an IP address with the DHCP server. Port number for DHCP is 67, 68. 
-
-```
-clear ip dhcp binding {address | * }
-```
-
-### DNS
-
-DNS is a host name to IP address translation service. DNS is a distributed database implemented in a hierarchy of name servers.
-
-Every host is identified by the IP address but remembering numbers is very difficult for the people and also the IP addresses are not static therefore a mapping is required to change the domain name to IP address. So DNS is used to convert the domain name of the websites to their numerical IP address.
-
-<h4>Domain:</h4>
-
-1. Generic domain : .com(commercial) .edu(educational) .mil(military) .org(non profit organization) .net(similar to commercial) all these are generic domain.
-2. Country domain .in (india) .us .uk
-3. Inverse domain if we want to know what is the domain name of the website. Ip to domain name mapping.So DNS can provide both the mapping for example to find the ip addresses of geeksforgeeks.org then we have to type nslookup www.geeksforgeeks.org.
-
-<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2017/02/DNS_2.png" />
-
-<h4>Hierarchy of Name Servers</h4>
-
-<h5>1. Root name servers</h5> 
-
-It is contacted by name servers that can not resolve the name. It contacts authoritative name server if name mapping is not known. It then gets the mapping and return the IP address to the host.
-
-<h5>2. Top level server</h5> 
-
-It is responsible for com, org, edu etc and all top level country domains like uk, fr, ca, in etc. They have info about authoritative domain servers and know names and IP addresses of each authoritative name server for the second level domains.
-
-<h5>3. Authoritative name servers</h5> 
-
-This is organization’s DNS server, providing authoritative hostName to IP mapping for organization servers. It can be maintained by organization or service provider. In order to reach cse.dtu.in we have to ask the root DNS server, then it will point out to the top level domain server and then to authoritative domain name server which actually contains the IP address. So the authoritative domain server will return the associative ip address.
-
-<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2017/02/DNS_3.png" />
-
-The client machine sends a request to the local name server, which , if root does not find the address in its database, sends a request to the root name server , which in turn, will route the query to an intermediate or authoritative name server. The root name server can also contain some hostName to IP address mappings . The intermediate name server always knows who the authoritative name server is. So finally the IP address is returned to the local name server which in turn returns the IP address to the host.
-
-### Why does DNS use UDP and not TCP?
-
-DNS is an application layer protocol. All application layer protocols use one of the two transport layer protocols, UDP(User Datagram Protocol) and TCP(Transmission Control Protocol). TCP is reliable and UDP is not reliable. DNS is supposed to be reliable, but it uses UDP, why? 
-
-There are the following interesting facts about TCP and UDP on the transport layer that justify the above.
-1. UDP is much faster. TCP is slow as it requires a 3-way handshake. The load on DNS servers is also an important factor. DNS servers (since they use UDP) don’t have to keep connections. 
-2. DNS requests are generally very small and fit well within UDP segments. 
-3. UDP is not reliable, but reliability can be added to the application layer. An application can use UDP and can be reliable by using a timeout and resend at the application layer. 
-
-Actually, DNS primarily uses the User Datagram Protocol (UDP) on port number 53 to serve requests. DNS queries consist of a single UDP request from the client followed by a single UDP reply from the server. When the length of the answer exceeds 512 bytes and both client and server support EDNS, larger UDP packets are used. Otherwise, the query is sent again using the Transmission Control Protocol (TCP). TCP is also used for tasks such as zone transfers. Some resolver implementations use TCP for all queries. 
