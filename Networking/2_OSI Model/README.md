@@ -137,6 +137,31 @@ WPS stands for wifi protected setup. wifi devices usually require a bit of tweak
 
 WPA stands for wireless protected access. WPA 2 psk is a variant of WPA where the key is shared between connected devices. PSK here stands for pre shared key. WPA 2 psk is designed for a small office and home network where all the people who'll be connecting to wifi can be trusted. Although WPA 2 is secure sharing the password with other people means that any one who has access to it can snoop on the network. For a home use case a WPA-2 psk is secure enough. And you can always change the password if you have any doubts that some one else is using it.
 
+### LiFi and WiFi
+
+Wi-Fi(wireless fidelity) and Li-Fi(light fidelity) both are two different technologies which are used to send and receive data wirelessly. In case of Wi-Fi we use Routers and Radio Frequency (RF) waves to transmit data, whereas in Li-Fi we use LED bulbs and Light signals to transmit and receive data.
+
+### Access-Lists (ACL)
+
+Access-list (ACL) is a set of rules defined for controlling network traffic and reducing network attacks. ACLs are used to filter traffic based on the set of rules defined for the incoming or outgoing of the network. 
+
+### AAA (Authentication, Authorization and Accounting)
+
+AAA is a standard-based framework used to control who is permitted to use network resources (through authentication), what they are authorized to do (through authorization), and capture the actions performed while accessing the network (through accounting). 
+
+<strong>1. Authentication : </strong>The process by which it can be identified that the user, which wants to access the network resources, valid or not by asking some credentials such as username and password. Common methods are to put authentication on console port, AUX port, or vty lines. 
+
+As network administrators, we can control how a user is authenticated if someone wants to access the network. Some of these methods include using the local database of that device (router) or sending authentication requests to an external server like the ACS server. To specify the method to be used for authentication, a default or customized authentication method list is used. 
+
+<strong>2. Authorization : </strong>It provides capabilities to enforce policies on network resources after the user has gained access to the network resources through authentication. After the authentication is successful, authorization can be used to determine what resources is the user allowed to access and the operations that can be performed. 
+
+For example, if a junior network engineer (who should not access all the resources) wants to access the device then the administrator can create a view that will allow particular commands only to be executed by the user (the commands that are allowed in the method list). The administrator can use the authorization method list to specify how the user is authorized to network resources i.e through a local database or ACS server. 
+
+<strong>3. Accounting : </strong> It provides means of monitoring and capturing the events done by the user while accessing the network resources. It even monitors how long the user has access to the network. The administrator can create an accounting method list to specify what should be accounted for and to whom the accounting records should be sent. 
+
+![image](https://user-images.githubusercontent.com/62550592/146647219-0ec480d4-8208-4bd5-ab50-254e39386e15.png)
+
+
 
 
 <hr>
