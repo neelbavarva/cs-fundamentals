@@ -65,5 +65,9 @@ Ethernet is the most widely used LAN technology, which is defined under IEEE sta
 
 <strong>3. Extranet</strong> : It is the type of network that allows users from outside to access the Intranet of an organization. 
 
+### Virtual Circuits and Datagram Networks
+
+Computer networks that provide connection-oriented services are called Virtual Circuits while those providing connection-less services are called Datagram networks. For prior knowledge, the Internet which we use is actually based on a Datagram network (connection-less) at the network level as all packets from a source to a destination do not follow the same path. 
+
 <hr>
 
