@@ -133,6 +133,10 @@ To access the Internet, one public IP address is needed, but we can use a privat
 
 ### WPA & WPS
 
+WPS stands for wifi protected setup. wifi devices usually require a bit of tweaking before they can be set up. You need to configure an SSID, take care of the security of the network by assigning it a password and then you need to connect it with your client, where the steps are repeated. Although this method is usually required only once still it was considered to be a bit of a hassle.
+
+WPA stands for wireless protected access. WPA 2 psk is a variant of WPA where the key is shared between connected devices. PSK here stands for pre shared key. WPA 2 psk is designed for a small office and home network where all the people who'll be connecting to wifi can be trusted. Although WPA 2 is secure sharing the password with other people means that any one who has access to it can snoop on the network. For a home use case a WPA-2 psk is secure enough. And you can always change the password if you have any doubts that some one else is using it.
+
 
 
 <hr>
