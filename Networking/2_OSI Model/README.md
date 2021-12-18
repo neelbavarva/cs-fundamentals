@@ -103,5 +103,28 @@ In essence, IP addresses are the identifier that allows information to be sent b
 
 ![image](https://user-images.githubusercontent.com/62550592/146629822-b9a2be42-ee8b-4c11-adc0-083df9a0969b.png)
 
+### IPv4 vs IPv6
+
+IPv4 is an IP version widely used to identify devices on a network using an addressing system. It was the first version of IP deployed for production in the ARPANET in 1983. It uses a 32-bit address scheme to store 2^32 addresses which is more than 4 billion addresses. It is considered the primary Internet Protocol and carries 94% of Internet traffic.
+
+IPv6 is the most recent version of the Internet Protocol. This new IP address version is being deployed to fulfill the need for more Internet addresses. It was aimed to resolve issues that are associated with IPv4. With 128-bit address space, it allows 340 undecillion unique address space. IPv6 is also called IPng (Internet Protocol next generation).
+
+![image](https://user-images.githubusercontent.com/62550592/146630017-409a0718-201d-45b3-8dd1-05b6c23ab256.png)
+
+<img src="https://www.guru99.com/images/1/053018_0657_IPv4vsIPv6W1.png" />
+
+### Supernet
+
+Supernetting is the opposite of Subnetting. In subnetting, a single big network is divided into multiple smaller subnetworks. In Supernetting, multiple networks are combined into a bigger network termed as a Supernetwork or Supernet. 
+
+### Routing 
+
+Routing is a process that is performed by layer 3 (or network layer) devices in order to deliver the packet by choosing an optimal path from one network to another. 
+
+<strong>1. Static Routing : </strong> Static routing is a process in which we have to manually add routes to the routing table. 
+
+<strong>2. Defaulr Routing : </strong> This is the method where the router is configured to send all packets towards a single router (next hop). It doesn’t matter to which network the packet belongs, it is forwarded out to the router which is configured for default routing. It is generally used with stub routers. A stub router is a router that has only one route to reach all other networks. 
+
+<strong>3. Dynamic Routing : </strong> Dynamic routing makes automatic adjustments of the routes according to the current state of the route in the routing table. Dynamic routing uses protocols to discover network destinations and the routes to reach them. RIP and OSPF are the best examples of dynamic routing protocols. Automatic adjustments will be made to reach the network destination if one route goes down. 
 
 <hr>
