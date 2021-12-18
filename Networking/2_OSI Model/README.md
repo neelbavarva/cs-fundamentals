@@ -69,5 +69,17 @@ Ethernet is the most widely used LAN technology, which is defined under IEEE sta
 
 Computer networks that provide connection-oriented services are called Virtual Circuits while those providing connection-less services are called Datagram networks. For prior knowledge, the Internet which we use is actually based on a Datagram network (connection-less) at the network level as all packets from a source to a destination do not follow the same path. 
 
+### Virtual LAN
+
+VLAN is a custom network which is created from one or more local area networks. It enables a group of devices available in multiple networks to be combined into one logical network. The result becomes a virtual LAN that is administered like a physical LAN. The full form of VLAN is defined as Virtual Local Area Network. VLAN in networking is a virtual extension of LAN
+
+The below topology depicts a network having all hosts inside the same virtual LAN:
+
+<img src="https://www.guru99.com/images/2/100720_0948_WhatisVLANT1.png" />
+
+### Wi-Fi
+
+Wi-Fi stands for Wireless Fidelity. It is a technology for wireless local area networking with devices based on IEEE 802.11 standards. Wi-Fi compatible devices can connect to the internet via WLAN network and a wireless access point abbreviated as AP. Wired networks differ from wireless which uses radio waves rather than transmitting electrical signals over the cables.
+
 <hr>
 
