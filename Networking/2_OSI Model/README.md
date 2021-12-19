@@ -12,7 +12,9 @@ Physical -> Data Link -> Network -> Transport -> Session -> Presentation -> Appl
 
 ## Physical Layer
 
-The lowest layer of the OSI reference model is the physical layer. It is responsible for the actual physical connection between the devices. The physical layer contains information in the form of bits. It is responsible for transmitting individual bits from one node to the next. When receiving data, this layer will get the signal received and convert it into 0s and 1s and send them to the Data Link layer, which will put the frame back together. ![146683646-550206c3-5298-4672-9973-a8b7c84a4cdd](https://user-images.githubusercontent.com/62550592/146683654-0ae7067d-6b3c-4a0c-824b-12b3d9b80cdf.png)
+The lowest layer of the OSI reference model is the physical layer. It is responsible for the actual physical connection between the devices. The physical layer contains information in the form of bits. It is responsible for transmitting individual bits from one node to the next. When receiving data, this layer will get the signal received and convert it into 0s and 1s and send them to the Data Link layer, which will put the frame back together.
+
+![146683646-550206c3-5298-4672-9973-a8b7c84a4cdd](https://user-images.githubusercontent.com/62550592/146683654-0ae7067d-6b3c-4a0c-824b-12b3d9b80cdf.png)
 
 
 The functions of the physical layer are :  
@@ -27,7 +29,9 @@ The functions of the physical layer are :
 
 ## Data Link Layer
 
-The data link layer is responsible for the node-to-node delivery of the message. The main function of this layer is to make sure data transfer is error-free from one node to another, over the physical layer. When a packet arrives in a network, it is the responsibility of DLL to transmit it to the Host using its MAC address. 
+The data link layer is responsible for the node-to-node delivery of the message. The main function of this layer is to make sure data transfer is error-free from one node to another, over the physical layer. When a packet arrives in a network, it is the responsibility of DLL to transmit it to the Host using its MAC address. ![146684503-fac46bb8-da21-4981-8969-c4243ba6712c](https://user-images.githubusercontent.com/62550592/146684509-7483ca0d-0d0b-40fb-a893-3d59ed2944c0.png)![146684503-fac46bb8-da21-4981-8969-c4243ba6712c](https://user-images.githubusercontent.com/62550592/146684511-cc28343f-9c20-401b-85f5-70ed09e7e063.png)
+
+
 
 Data Link Layer is divided into two sublayers:  
 
@@ -166,6 +170,8 @@ For example, if a junior network engineer (who should not access all the resourc
 
 SONET stands for Synchronous Optical Network. SONET is a communication protocol, developed by Bellcore – that is used to transmit a large amount of data over relatively large distances using optical fibre. With SONET, multiple digital data streams are transferred at the same time over the optical fibre.
 
+<hr>
+
 ## Transport Layer
 
 The transport layer provides services to the application layer and takes services from the network layer. The data in the transport layer is referred to as Segments. It is responsible for the End to End Delivery of the complete message. The transport layer also provides the acknowledgement of the successful data transmission and re-transmits the data if an error is found. 
@@ -179,6 +185,28 @@ Transport Layer reads the port number from its header and forwards the Data whic
 ![image](https://user-images.githubusercontent.com/62550592/146683646-550206c3-5298-4672-9973-a8b7c84a4cdd.png)
 
 ![image](https://user-images.githubusercontent.com/62550592/146683614-04039e7c-2671-42be-b26e-e130faceb2ca.png)
+
+<hr>
+
+### TCP 3-Way Handshake Process
+
+The two important protocols of this layer are – TCP, UDP(User Datagram Protocol) out of which TCP is prevalent(since it provides reliability for the connection established). An application of UDP in querying the DNS server to get the binary equivalent of the Domain Name used for the website.
+
+TCP provides reliable communication with something called Positive Acknowledgement with Re-transmission(PAR). The Protocol Data Unit(PDU) of the transport layer is called a segment. Now a device using PAR resend the data unit until it receives an acknowledgement. If the data unit received at the receiver’s end is damaged(It checks the data with checksum functionality of the transport layer that is used for Error Detection), the receiver discards the segment. So the sender has to resend the data unit for which positive acknowledgement is not received. You can realize from the above mechanism that three segments are exchanged between sender(client) and receiver(server) for a reliable TCP connection to get established. 
+
+![image](https://user-images.githubusercontent.com/62550592/146684503-fac46bb8-da21-4981-8969-c4243ba6712c.png)
+
+### P2P(Peer To Peer) File Sharing
+
+The individual users in the network(file sharing network) are referred to as peers. The peers request files from other peers by establishing TCP or UDP connections. 
+
+Now, when one peer makes a request, it is possible that multiple peers have a copy of that requested object. Now the problem is how to get the IP addresses of all those peers. This is decided by the underlying architecture supported by the P2P systems. By means of one of these methods, the client peer can get to know about all the peers which have the requested object/file and the file transfer takes place directly between these two peers. 
+
+![image](https://user-images.githubusercontent.com/62550592/146684833-927becf9-e02f-482b-9246-48fcc936029c.png)
+
+![image](https://user-images.githubusercontent.com/62550592/146684860-35d4b735-0d72-4637-9ab7-656875f64aa6.png)
+
+![image](https://user-images.githubusercontent.com/62550592/146684892-949a9e7b-2d13-4e7b-9691-08345c7c5263.png)
 
 
 <hr>
