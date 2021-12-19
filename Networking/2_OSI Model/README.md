@@ -208,5 +208,8 @@ Now, when one peer makes a request, it is possible that multiple peers have a co
 
 ![image](https://user-images.githubusercontent.com/62550592/146684892-949a9e7b-2d13-4e7b-9691-08345c7c5263.png)
 
+### Congestion Control
+
+A state occurs in the network layer when the message traffic is so heavy that it slows down network response time. Token bucket is superior to Leaky bucket
 
 <hr>
