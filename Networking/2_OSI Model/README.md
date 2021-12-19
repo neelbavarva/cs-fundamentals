@@ -175,4 +175,6 @@ Transport layer receives the formatted data from the upper layers, performs Segm
 <strong>* At receiver's side</strong>
 Transport Layer reads the port number from its header and forwards the Data which it has received to the respective application. It also performs sequencing and reassembling of the segmented data. 
 
+![image](https://user-images.githubusercontent.com/62550592/146683575-0003e0e0-ff64-495d-9b69-5cb1859e6d14.png)
+
 <hr>
