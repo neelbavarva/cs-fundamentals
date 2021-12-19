@@ -161,7 +161,18 @@ For example, if a junior network engineer (who should not access all the resourc
 
 ![image](https://user-images.githubusercontent.com/62550592/146647219-0ec480d4-8208-4bd5-ab50-254e39386e15.png)
 
+### Synchronous Optical Network (SONET)
 
+SONET stands for Synchronous Optical Network. SONET is a communication protocol, developed by Bellcore – that is used to transmit a large amount of data over relatively large distances using optical fibre. With SONET, multiple digital data streams are transferred at the same time over the optical fibre.
 
+## Transport Layer
+
+The transport layer provides services to the application layer and takes services from the network layer. The data in the transport layer is referred to as Segments. It is responsible for the End to End Delivery of the complete message. The transport layer also provides the acknowledgement of the successful data transmission and re-transmits the data if an error is found. 
+
+<strong>* At sender's side</strong> 
+Transport layer receives the formatted data from the upper layers, performs Segmentation, and also implements Flow & Error control to ensure proper data transmission. It also adds Source and Destination port numbers in its header and forwards the segmented data to the Network Layer. 
+
+<strong>* At receiver's side</strong>
+Transport Layer reads the port number from its header and forwards the Data which it has received to the respective application. It also performs sequencing and reassembling of the segmented data. 
 
 <hr>
