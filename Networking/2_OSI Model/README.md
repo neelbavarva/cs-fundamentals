@@ -12,7 +12,8 @@ Physical -> Data Link -> Network -> Transport -> Session -> Presentation -> Appl
 
 ## Physical Layer
 
-The lowest layer of the OSI reference model is the physical layer. It is responsible for the actual physical connection between the devices. The physical layer contains information in the form of bits. It is responsible for transmitting individual bits from one node to the next. When receiving data, this layer will get the signal received and convert it into 0s and 1s and send them to the Data Link layer, which will put the frame back together. 
+The lowest layer of the OSI reference model is the physical layer. It is responsible for the actual physical connection between the devices. The physical layer contains information in the form of bits. It is responsible for transmitting individual bits from one node to the next. When receiving data, this layer will get the signal received and convert it into 0s and 1s and send them to the Data Link layer, which will put the frame back together. ![146683646-550206c3-5298-4672-9973-a8b7c84a4cdd](https://user-images.githubusercontent.com/62550592/146683654-0ae7067d-6b3c-4a0c-824b-12b3d9b80cdf.png)
+
 
 The functions of the physical layer are :  
 
@@ -175,6 +176,9 @@ Transport layer receives the formatted data from the upper layers, performs Segm
 <strong>* At receiver's side</strong>
 Transport Layer reads the port number from its header and forwards the Data which it has received to the respective application. It also performs sequencing and reassembling of the segmented data. 
 
-![image](https://user-images.githubusercontent.com/62550592/146683575-0003e0e0-ff64-495d-9b69-5cb1859e6d14.png)
+![image](https://user-images.githubusercontent.com/62550592/146683646-550206c3-5298-4672-9973-a8b7c84a4cdd.png)
+
+![image](https://user-images.githubusercontent.com/62550592/146683614-04039e7c-2671-42be-b26e-e130faceb2ca.png)
+
 
 <hr>
