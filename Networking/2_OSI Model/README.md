@@ -218,5 +218,18 @@ Error control in TCP is mainly done through the use of three simple techniques :
 
 ![image](https://user-images.githubusercontent.com/62550592/146799219-60a3777f-46e1-4239-92b1-9ddf32bebdd9.png)
 
-
 <hr>
+
+## Session Layer
+
+This layer is responsible for the establishment of connection, maintenance of sessions, authentication, and also ensures security. 
+
+The functions of the session layer are :  
+
+<strong>1. Session establishment, maintenance, and termination: </strong> The layer allows the two processes to establish, use and terminate a connection.
+
+<strong>2. Synchronization: </strong> This layer allows a process to add checkpoints which are considered synchronization points into the data. These synchronization points help to identify the error so that the data is re-synchronized properly, and ends of the messages are not cut prematurely and data loss is avoided.
+
+<strong>3. Dialog Controller: </strong>  The session layer allows two systems to start communication with each other in half-duplex or full-duplex.
+
+
