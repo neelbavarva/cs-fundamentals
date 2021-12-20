@@ -395,5 +395,10 @@ The root name server returns the IP Address of the Top-Level Domain Server to th
 
 <strong>Cashing Mechanism :</strong> In both iterative and recursive resolution, after a server asks for a mapping request from another server, it receives the response and stores this information in the Cache memory before sending it to the client. This is done to lower the search time it takes for a server to check the IP Address in its Database. So, the next time, if a request comes to the server, it first checks its cache memory and tries to resolve the request. The response is marked as Unauthoritative to inform the client that the response is from Cache. The only way caching can be problematic is when the server caches the mapping for a long time and the mapping gets outdated. However, there are techniques to resolve this like using TTL.
 
+### DNS Spoofing or DNS Cache poisoning
+
+DNS Spoofing means getting a wrong entry or IP address of the requested site from the DNS server. Attackers find out the flaws in the DNS system and take control and will redirect to a malicious website. 
+
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/DNS_Spoofing.png" />
 
 <hr>
