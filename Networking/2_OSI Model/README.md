@@ -212,4 +212,11 @@ Now, when one peer makes a request, it is possible that multiple peers have a co
 
 A state occurs in the network layer when the message traffic is so heavy that it slows down network response time. Token bucket is superior to Leaky bucket
 
+### Error Control
+
+Error control in TCP is mainly done through the use of three simple techniques : 
+
+![image](https://user-images.githubusercontent.com/62550592/146799219-60a3777f-46e1-4239-92b1-9ddf32bebdd9.png)
+
+
 <hr>
