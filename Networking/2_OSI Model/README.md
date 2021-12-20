@@ -401,4 +401,18 @@ DNS Spoofing means getting a wrong entry or IP address of the requested site fro
 
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/DNS_Spoofing.png" />
 
+### Types of DNS Attacks
+
+<strong>1. Denial of service (DoS) :</strong> An attack where the attacker renders a computer useless (inaccessible) to the user by making a resource unavailable or by flooding the system with traffic.
+
+<strong>2. Distributed denial of service (DDoS) :</strong> The attacker controls an overwhelming amount of computers (hundreds or thousands) in order to spread malware and flood the victim’s computer with unnecessary and overloading traffic. Eventually, unable to harness the power necessary to handle the intensive processing, the systems will overload and crash.
+
+<strong>3. DNS spoofing (also known as DNS cache poisoning) :</strong> An attacker will drive the traffic away from real DNS servers and redirect them to a “pirate” server, unbeknownst to the users. This may cause the corruption/theft of a user’s personal data.
+
+<strong>4. Fast flux :</strong> An attacker will typically spoof his IP address while performing an attack. Fast flux is a technique to constantly change location-based data in order to hide where exactly the attack is coming from. This will mask the attacker’s real location, giving him the time needed to exploit the attack. Flux can be single or double or of any other variant. A single flux changes the address of the webserver while double flux changes both the address of the web server and the names of DNS serves.
+
+<strong>5. Reflected attacks :</strong> Attackers will send thousands of queries while spoofing their own IP address and using the victim’s source address. When these queries are answered, they will all be redirected to the victim himself.
+
+<strong>6. Reflective amplification DoS :</strong> When the size of the answer is considerably larger than the query itself, a flux is triggered, causing an amplification effect. This generally uses the same method as a reflected attack, but this attack will overwhelm the user’s system’s infrastructure further.
+
 <hr>
