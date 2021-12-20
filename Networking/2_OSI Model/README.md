@@ -415,4 +415,5 @@ DNS Spoofing means getting a wrong entry or IP address of the requested site fro
 
 <strong>6. Reflective amplification DoS :</strong> When the size of the answer is considerably larger than the query itself, a flux is triggered, causing an amplification effect. This generally uses the same method as a reflected attack, but this attack will overwhelm the user’s system’s infrastructure further.
 
+
 <hr>
