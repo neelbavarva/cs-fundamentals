@@ -415,5 +415,10 @@ DNS Spoofing means getting a wrong entry or IP address of the requested site fro
 
 <strong>6. Reflective amplification DoS :</strong> When the size of the answer is considerably larger than the query itself, a flux is triggered, causing an amplification effect. This generally uses the same method as a reflected attack, but this attack will overwhelm the user’s system’s infrastructure further.
 
+### How DHCP server dynamically assigns IP address to a host?
+
+DHCP is an abbreviation for Dynamic Host Configuration Protocol. It is an application layer protocol used by hosts for obtaining network setup information. The DHCP is controlled by a DHCP server that dynamically distributes network configuration parameters such as IP addresses, subnet masks, and gateway addresses. 
+
+<a href="https://www.geeksforgeeks.org/how-dhcp-server-dynamically-assigns-ip-address-to-a-host/" >Read More</a>
 
 <hr>
