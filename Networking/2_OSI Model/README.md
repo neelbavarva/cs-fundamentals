@@ -14,9 +14,6 @@ Physical -> Data Link -> Network -> Transport -> Session -> Presentation -> Appl
 
 The lowest layer of the OSI reference model is the physical layer. It is responsible for the actual physical connection between the devices. The physical layer contains information in the form of bits. It is responsible for transmitting individual bits from one node to the next. When receiving data, this layer will get the signal received and convert it into 0s and 1s and send them to the Data Link layer, which will put the frame back together.
 
-![146683646-550206c3-5298-4672-9973-a8b7c84a4cdd](https://user-images.githubusercontent.com/62550592/146683654-0ae7067d-6b3c-4a0c-824b-12b3d9b80cdf.png)
-
-
 The functions of the physical layer are :  
 
 <strong>1. Bit synchronization</strong> : The physical layer provides the synchronization of the bits by providing a clock. This clock controls both sender and receiver thus providing synchronization at bit level.
