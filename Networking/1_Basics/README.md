@@ -91,7 +91,7 @@ Transmission medium is a physical path between the transmitter and the receiver.
 - one-to-one transmission
 
 ### Broadcast
-- one-to-one transmission
+- one-to-all transmission
 
 ### Multicast
 - one/more senders and one/more recipients participate
