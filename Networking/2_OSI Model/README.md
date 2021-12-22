@@ -28,9 +28,6 @@ The functions of the physical layer are :
 
 The data link layer is responsible for the node-to-node delivery of the message. The main function of this layer is to make sure data transfer is error-free from one node to another, over the physical layer. When a packet arrives in a network, it is the responsibility of DLL to transmit it to the Host using its MAC address.
 
-![image](https://user-images.githubusercontent.com/62550592/146885595-99099488-cc0e-4561-a757-bfa93093d220.png)
-
-
 Data Link Layer is divided into two sublayers:  
 
 <strong>1. Logical Link Control (LLC)</strong><br>
