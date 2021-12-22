@@ -53,6 +53,8 @@ The functions of the Data Link layer are :
 
 <a href="https://www.geeksforgeeks.org/flow-control-in-data-link-layer/">Flow Control in Data Link Layer</a>
 
+<a href="https://www.youtube.com/watch?v=NhpzBldHOYo&list=PLBlnK6fEyqRgMCUAG0XRw78UA8qnv6jEx&index=36">Framing</s>
+
 <hr>
 
 ### What Is Ethernet?
