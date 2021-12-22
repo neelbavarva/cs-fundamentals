@@ -51,6 +51,8 @@ The functions of the Data Link layer are :
 *** Data Link layer is handled by the NIC (Network Interface Card) and device drivers of host machines. <br>
 *** Switch & Bridge are Data Link Layer devices._
 
+<a href="https://www.geeksforgeeks.org/flow-control-in-data-link-layer/">Flow Control in Data Link Layer</a>
+
 <hr>
 
 ### What Is Ethernet?
