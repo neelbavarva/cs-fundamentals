@@ -26,13 +26,7 @@ The functions of the physical layer are :
 
 <hr>
 
-### Types of Cables
-
-![image](https://user-images.githubusercontent.com/62550592/147189348-ce5e877f-8780-4778-9da4-33275c2565a5.png)
-
-### Repeaters
-
-![image](https://user-images.githubusercontent.com/62550592/147189660-8ca76341-e641-405b-8589-2b74e732e550.png)
+### Types of Cables - Repeaters - Hub - Bridges
 
 <hr>
 
