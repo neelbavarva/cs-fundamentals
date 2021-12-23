@@ -26,7 +26,7 @@ The functions of the physical layer are :
 
 <hr>
 
-### Types of Cables - Repeaters - Hub - Bridges
+### Types of Cables - Repeaters - Hub - Bridges - Switch - Router
 
 <hr>
 
