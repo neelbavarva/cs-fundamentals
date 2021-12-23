@@ -28,6 +28,10 @@ The functions of the physical layer are :
 
 ### Types of Cables - Repeaters - Hub - Bridges - Switch - Router
 
+### Collision Domain and Broadcast Domain
+
+![image](https://user-images.githubusercontent.com/62550592/147191428-b4802967-5cbe-4402-9653-d59968c8345f.png)
+
 <hr>
 
 ## Data Link Layer
