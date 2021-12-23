@@ -24,6 +24,15 @@ The functions of the physical layer are :
 
 <strong>4. Transmission mode</strong> : Physical layer also defines the way in which the data flows between the two connected devices. The various transmission modes possible are Simplex, half-duplex and full-duplex.
 
+<hr>
+
+### Types of Cables
+
+![image](https://user-images.githubusercontent.com/62550592/147189348-ce5e877f-8780-4778-9da4-33275c2565a5.png)
+
+
+<hr>
+
 ## Data Link Layer
 
 The data link layer is responsible for the node-to-node delivery of the message. The main function of this layer is to make sure data transfer is error-free from one node to another, over the physical layer. When a packet arrives in a network, it is the responsibility of DLL to transmit it to the Host using its MAC address.
