@@ -26,7 +26,27 @@ The functions of the physical layer are :
 
 <hr>
 
-### Types of Cables - Repeaters - Hub - Bridges - Switch - Router
+### Types of Cables
+
+![image](https://user-images.githubusercontent.com/62550592/147192630-112b25cd-c7b5-4ab5-a630-0fbc3786c474.png)
+
+### Repeaters 
+
+![image](https://user-images.githubusercontent.com/62550592/147192712-9b84959c-f0c9-458a-afc0-044d8de41db1.png)
+
+### Hub
+
+![image](https://user-images.githubusercontent.com/62550592/147192831-32d34186-0c35-48dc-a485-100a8a1106b4.png)
+
+### Bridges -> Switch(Bridge with multiple Ports)
+
+![image](https://user-images.githubusercontent.com/62550592/147193081-9a9d9de6-1f06-4baf-a755-94134bb6d17a.png)
+
+### Router
+
+Routers are network layer devices and are particularly identified as Layer- 3 devices of the OSI Model. They process logical addressing information in the Network header of a packet such as IP Addresses. Router is used to create larger complex networks by complex traffic routing.
+
+When a router receives the data, it determines the destination address by reading the header of the packet. Once the address is determined, it searches in its routing table to get know how to reach the destination and then forwards the packet to the higher hop on the route. The hop could be the final destination or another router.
 
 ### Collision Domain and Broadcast Domain
 
