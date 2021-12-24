@@ -219,9 +219,17 @@ Transport layer receives the formatted data from the upper layers, performs Segm
 <strong>* At receiver's side</strong>
 Transport Layer reads the port number from its header and forwards the Data which it has received to the respective application. It also performs sequencing and reassembling of the segmented data. 
 
-![image](https://user-images.githubusercontent.com/62550592/146683646-550206c3-5298-4672-9973-a8b7c84a4cdd.png)
+The functions of the transport layer are :  
 
-![image](https://user-images.githubusercontent.com/62550592/146683614-04039e7c-2671-42be-b26e-e130faceb2ca.png)
+<strong>1. Segmentation and Reassembly : </strong>This layer accepts the message from the (session) layer, breaks the message into smaller units. Each of the segments produced has a header associated with it. The transport layer at the destination station reassembles the message.
+
+<strong>2. Service Point Addressing : </strong> In order to deliver the message to the correct process, the transport layer header includes a type of address called service point address or port address. Thus by specifying this address, the transport layer makes sure that the message is delivered to the correct process.
+
+_Data in the Transport Layer is called as Segments._
+
+_Transport layer is operated by the Operating System. It is a part of the OS and communicates with the Application Layer by making system calls._
+
+_Transport Layer is called as Heart of OSI model._
 
 <hr>
 
