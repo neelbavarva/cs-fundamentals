@@ -239,7 +239,11 @@ The two important protocols of this layer are – TCP, UDP(User Datagram Protoco
 
 TCP provides reliable communication with something called Positive Acknowledgement with Re-transmission(PAR). The Protocol Data Unit(PDU) of the transport layer is called a segment. Now a device using PAR resend the data unit until it receives an acknowledgement. If the data unit received at the receiver’s end is damaged(It checks the data with checksum functionality of the transport layer that is used for Error Detection), the receiver discards the segment. So the sender has to resend the data unit for which positive acknowledgement is not received. You can realize from the above mechanism that three segments are exchanged between sender(client) and receiver(server) for a reliable TCP connection to get established. 
 
-![image](https://user-images.githubusercontent.com/62550592/146684503-fac46bb8-da21-4981-8969-c4243ba6712c.png)
+<strong>Step 1 (SYN) : </strong>In the first step, the client wants to establish a connection with a server, so it sends a segment with SYN(Synchronize Sequence Number) which informs the server that the client is likely to start communication and with what sequence number it starts segments with
+
+<strong>Step 2 (SYN + ACK) : </strong>Server responds to the client request with SYN-ACK signal bits set. Acknowledgement(ACK) signifies the response of the segment it received and SYN signifies with what sequence number it is likely to start the segments with
+
+<strong>Step 3 (ACK) : </strong>In the final part client acknowledges the response of the server and they both establish a reliable connection with which they will start the actual data transfer
 
 ### P2P(Peer To Peer) File Sharing
 
