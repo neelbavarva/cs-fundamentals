@@ -61,7 +61,15 @@ The data link layer is responsible for the node-to-node delivery of the message.
 Data Link Layer is divided into two sublayers:  
 
 <strong>1. Logical Link Control (LLC)</strong><br>
+
+- It is responsible for transferring the packets to the Network layer of the receiver that is receiving.
+- It identifies the address of the network layer protocol from the header.
+- It also provides flow control.
+
 <strong>2. Media Access Control (MAC)</strong>
+
+- A Media access control layer is a link between the Logical Link Control layer and the network's physical layer.
+- It is used for transferring the packets over the network.
 
 The packet received from the Network layer is further divided into frames depending on the frame size of NIC(Network Interface Card). DLL also encapsulates Sender and Receiver’s MAC address in the header. 
 
