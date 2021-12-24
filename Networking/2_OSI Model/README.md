@@ -265,7 +265,15 @@ A state occurs in the network layer when the message traffic is so heavy that it
 
 Error control in TCP is mainly done through the use of three simple techniques : 
 
-![image](https://user-images.githubusercontent.com/62550592/146799219-60a3777f-46e1-4239-92b1-9ddf32bebdd9.png)
+<strong>1. Checksum : </strong>Every segment contains a checksum field which is used to find corrupted segments. If the segment is corrupted, then that segment is discarded by the destination TCP and is considered lost.
+
+<strong>2. Acknowledgement : </strong>TCP has another mechanism called acknowledgement to affirm that the data segments have been delivered. Control segments that contain no data but have sequence numbers will be acknowledged as well but ACK segments are not acknowledged.
+  
+<strong>3. Retransmission : </strong>When a segment is missing, delayed to deliver to a receiver, corrupted when it is checked by the receiver then that segment is retransmitted again. Segments are retransmitted only during two events: when the sender receives three duplicate acknowledgments (ACK) or when a retransmission timer expires. 
+  
+  <strong>3.1. Retransmission after RTO : </strong>TCP always preserves one retransmission time-out (RTO) timer for all sent but not acknowledged segments. When the timer runs out of time, the earliest segment is retransmitted. Here no timer is set for acknowledgment. In TCP, the RTO value is dynamic in nature and it is updated using the round trip time (RTT) of segments. RTT is the time duration needed for a segment to reach the receiver and an acknowledgment to be received by the sender.
+  
+  <strong>3.2 Retransmission after Three duplicate ACK segments : </strong>RTO method works well when the value of RTO is small. If it is large, more time is needed to get confirmation about whether a segment has been delivered or not. Sometimes one segment is lost and the receiver receives so many out-of-order segments that they cannot be saved. In order to solve this situation, three duplicate acknowledgement method is used and missing segment is retransmitted immediately instead of retransmitting already delivered segment. This is a fast retransmission because it makes it possible to quickly retransmit lost segments instead of waiting for timer to end.
 
 <hr>
 
