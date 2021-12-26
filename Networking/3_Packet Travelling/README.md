@@ -5,7 +5,7 @@ There are three parts to the question.
 - Second part is how it travels from one host that is source to other host that is destination with many routers sitting in between. 
 - Third part is what goes inside destination host when it receives a packet on network. We will discuss each one by one.
 
-### Processing packet at source machine:
+## Processing packet at source machine:
 
 Below figure explains above steps a packet goes through before going out of host
 
@@ -23,4 +23,18 @@ Now packet has reached at an intermediate router which sit between source and de
 
 <img src="http://1.bp.blogspot.com/-AaLqpYYK8q0/VQ4-x8dWCkI/AAAAAAAABn8/0fV2dvn8gqk/s1600/Router.png" />
 
+## Processing a packet at router:
 
+Router takes the packet and does three basic operations : Routing, forwarding and encapsulation
+
+### Routing
+
+When router receives packet, first of all it strips down the MAC layer header and looks into the IP header which contains destination IP address. Once destination IP is known, router looks into it database in order to find where should this packet be forwarded to make it reach to destination. This databases is known as routing table.
+
+There are three cases which may occur when router looks into routing table for destination IP
+
+1. If there is an entry corresponding to destination IP, we receive the interface name the packet should be forwarded on to.
+2. If there is no direct entry, then IP is converted into network IP using mask and then checked again.It should be noted that longest prefix match to be find best forwarding interface.
+3. If nothing matches, then router just forwards it to default destination configured.
+
+<img src="http://2.bp.blogspot.com/-QfK1N9nsEmI/VQ5Br4TbI-I/AAAAAAAABoI/lKS4KQTSGMs/s1600/Router%2B(1).png" />
