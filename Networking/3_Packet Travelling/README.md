@@ -62,4 +62,4 @@ Router caches the MAC address of next hops it needs to send packet to, it replac
 3. At IP layer, packet validation like checksum verification etc is done and then passed on to relevant transport layer.
 4. Transport later then passes it on to the appropriate port so that it reaches correct application.
 
-
+For more information search for each of these topic and dig through each of them.
