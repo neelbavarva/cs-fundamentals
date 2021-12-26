@@ -38,3 +38,11 @@ There are three cases which may occur when router looks into routing table for d
 3. If nothing matches, then router just forwards it to default destination configured.
 
 <img src="http://2.bp.blogspot.com/-QfK1N9nsEmI/VQ5Br4TbI-I/AAAAAAAABoI/lKS4KQTSGMs/s1600/Router%2B(1).png" />
+
+### Forwarding
+
+Once routing process finishes, the packet is switched from the ingress interface to egress interface, commonly known as forwarding. Process switching, fast switching and CEF switching are three method of forwarding.
+
+Before third step, router decreases the TTL and recalculates the checksum of packet and put it back.
+
+
