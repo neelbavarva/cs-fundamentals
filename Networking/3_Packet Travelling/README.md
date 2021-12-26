@@ -45,4 +45,21 @@ Once routing process finishes, the packet is switched from the ingress interface
 
 Before third step, router decreases the TTL and recalculates the checksum of packet and put it back.
 
+### Encapsulation
+
+Third process is encapsulation. Please keep in mind that L3 or layer 3 or network layer destination IP address never changes through out the path of IP packet, except from cases like NATing or VPN. 
+
+Only thing which changes is source and destination MAC addresses at data link layer.
+
+Router caches the MAC address of next hops it needs to send packet to, it replaces the source and destination MAC address in it and send it to physical layer.
+
+## Processing packet at destination host
+
+<img src="http://2.bp.blogspot.com/-sSsiW1HHz30/VQ44rpoih_I/AAAAAAAABns/7iHAraZzEHI/s1600/IP%2Bstack%2B(2).png" />
+
+1. Packet is received at network card, physical layer, which generates an interrupt to CPU and CPU reads packet in,
+2. At data link layer, destination MAC address is checked to see if packet is destined to this machine, If yes, packet is sent up to network layer.
+3. At IP layer, packet validation like checksum verification etc is done and then passed on to relevant transport layer.
+4. Transport later then passes it on to the appropriate port so that it reaches correct application.
+
 
