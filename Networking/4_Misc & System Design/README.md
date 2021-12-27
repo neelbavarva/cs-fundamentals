@@ -86,4 +86,12 @@ In this manner, a load balancer performs the following functions:
 
 <img src="https://www.nginx.com/wp-content/uploads/2014/07/what-is-load-balancing-diagram-NGINX-640x324.png" />
 
+##  Address Resolution Protocol
 
+.
+
+.
+
+.
+
+## Horizontal vs Vertical Scaling
