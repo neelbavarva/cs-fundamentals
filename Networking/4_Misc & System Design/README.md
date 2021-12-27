@@ -120,3 +120,13 @@ A CDN, or content delivery network, caches content (such as images, videos, or w
 
 When a user requests content from a website using a CDN, the CDN fetches that content from an origin server, and then saves a copy of the content for future requests. Cached content remains in the CDN cache as long as users continue to request it.
 
+## VIP (Virtual I.P.)
+
+.
+
+.
+
+.
+
+## REST API vs HTTP API
+
