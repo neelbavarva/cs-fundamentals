@@ -95,3 +95,13 @@ In this manner, a load balancer performs the following functions:
 .
 
 ## Horizontal vs Vertical Scaling
+
+.
+
+.
+
+.
+
+## Caching
+
+
