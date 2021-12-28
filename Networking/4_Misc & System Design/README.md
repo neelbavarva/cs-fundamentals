@@ -207,3 +207,13 @@ Multiplexing is achieved by using a device called Multiplexer (MUX) that combine
 Demultiplexing is achieved by using a device called Demultiplexer (DEMUX) available at the receiving end. DEMUX separates a signal into its component signals (one input and n outputs). Therefore, we can say that demultiplexing follows the one-to-many approach.
 
 ## Modem vs Router
+
+.
+
+.
+
+.
+
+## How Bluetooth works
+
+
