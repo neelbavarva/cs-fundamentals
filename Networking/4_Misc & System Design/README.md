@@ -151,3 +151,7 @@ Virtualization enables you to run multiple operating systems on the hardware of 
 Performance refers to the capability of a system to provide a certain response time. server a defined number of users or process a certain amount of data.
 
 Scalability referes to the characteristic of a system to increase performance by adding additional ressources (servers).
+
+## Latency vs Throughput
+
+Latency indicates how long it takes for packets to reach their destination. Throughput is the term given to the number of packets that are processed within a specific period of time.
