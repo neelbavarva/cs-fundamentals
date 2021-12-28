@@ -130,3 +130,15 @@ When a user requests content from a website using a CDN, the CDN fetches that co
 
 ## REST API vs HTTP API
 
+.
+
+.
+
+.
+
+## Container in Computer Networks
+
+Container Networking is an emerging application sandboxing mechanism used in home desktops and web-scale enterprise networking solutions similar in concept to a virtual machine. Isolated inside the container from the host and all other containers are a full-featured Linux environment with its own users, file system, processes, and network stack. All applications inside the container are permitted to access or modify files or resources available inside the container only.
+
+It is possible to run multiple containers at the same time, each with their own installations and dependencies. This is particularly useful in instances when newer versions of an application may require a dependency upgraded that may cause conflicts with other application dependencies running on the server. Unlike virtual machines, containers share host resources rather than fully simulating all hardware on the computer, making containers smaller and faster than virtual machines and reducing overhead.
+
