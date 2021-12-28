@@ -142,3 +142,7 @@ Container Networking is an emerging application sandboxing mechanism used in hom
 
 It is possible to run multiple containers at the same time, each with their own installations and dependencies. This is particularly useful in instances when newer versions of an application may require a dependency upgraded that may cause conflicts with other application dependencies running on the server. Unlike virtual machines, containers share host resources rather than fully simulating all hardware on the computer, making containers smaller and faster than virtual machines and reducing overhead.
 
+## Containerization or virtualization
+
+Virtualization enables you to run multiple operating systems on the hardware of a single physical server, while containerization enables you to deploy multiple applications using the same operating system on a single virtual machine or server. 
+
