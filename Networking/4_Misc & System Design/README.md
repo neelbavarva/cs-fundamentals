@@ -165,3 +165,29 @@ VPNs encrypt your internet traffic and disguise your online identity. This makes
 A VPN hides your IP address by letting the network redirect it through a specially configured remote server run by a VPN host. This means that if you surf online with a VPN, the VPN server becomes the source of your data. This means your Internet Service Provider (ISP) and other third parties cannot see which websites you visit or what data you send and receive online. A VPN works like a filter that turns all your data into "gibberish". Even if someone were to get their hands on your data, it would be useless.
 
 <a href="https://www.kaspersky.com/resource-center/definitions/what-is-a-vpn">Read More</a>
+
+## Router vs Gateway
+
+.
+
+.
+
+.
+
+## NIC amd MAC Address
+
+A NIC is a special hardware card within any networked device (computer, printer, router, etc.) that handles all the technical aspects of sending and receiving data packets over a computer network.
+
+Like your mailing address at home, your computer's NIC has a unique address. This address must be unique, otherwise, network traffic cannot find its way to the right computer.
+
+The distinctive address that identifies a NIC is called the Media Access Control (MAC) address. A MAC address is formatted as a six-byte, hexadecimal number
+
+```
+00:90:7F:12:DE:7F
+```
+
+### Why do we need IP when we have MAC?
+
+Actually MAC address are fixed hence they are not as scalable compared to IP address. IP address have several other features like subnetting and supernetting which gives a logical understanding of the presence of a machine in a network. These facilities are not with the MAC address.
+
+Also MAC address are not routable. The Internet Protocols will not treat them as an address of a source or destination. Hence IP address in many ways simplifies our task.
