@@ -146,3 +146,8 @@ It is possible to run multiple containers at the same time, each with their own 
 
 Virtualization enables you to run multiple operating systems on the hardware of a single physical server, while containerization enables you to deploy multiple applications using the same operating system on a single virtual machine or server. 
 
+## Performance vs. Scalability
+
+Performance refers to the capability of a system to provide a certain response time. server a defined number of users or process a certain amount of data.
+
+Scalability referes to the characteristic of a system to increase performance by adding additional ressources (servers).
