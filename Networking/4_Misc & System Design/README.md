@@ -191,3 +191,11 @@ The distinctive address that identifies a NIC is called the Media Access Control
 Actually MAC address are fixed hence they are not as scalable compared to IP address. IP address have several other features like subnetting and supernetting which gives a logical understanding of the presence of a machine in a network. These facilities are not with the MAC address.
 
 Also MAC address are not routable. The Internet Protocols will not treat them as an address of a source or destination. Hence IP address in many ways simplifies our task.
+
+## Private and Public IP addresses
+
+<strong>Private IP address</strong> of a system is the IP address which is used to communicate within the same network. Using private IP data or information can be sent or received within the same network.
+
+<strong>Public IP address</strong> of a system is the IP address which is used to communicate outside the network. Public IP address is basically assigned by the ISP (Internet Service Provider).
+
+
