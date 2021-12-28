@@ -155,3 +155,13 @@ Scalability referes to the characteristic of a system to increase performance by
 ## Latency vs Throughput
 
 Latency indicates how long it takes for packets to reach their destination. Throughput is the term given to the number of packets that are processed within a specific period of time.
+
+## VPN (Virtual Private Network)
+
+VPNs encrypt your internet traffic and disguise your online identity. This makes it more difficult for third parties to track your activities online and steal data. The encryption takes place in real time.
+
+### How does a VPN work?
+
+A VPN hides your IP address by letting the network redirect it through a specially configured remote server run by a VPN host. This means that if you surf online with a VPN, the VPN server becomes the source of your data. This means your Internet Service Provider (ISP) and other third parties cannot see which websites you visit or what data you send and receive online. A VPN works like a filter that turns all your data into "gibberish". Even if someone were to get their hands on your data, it would be useless.
+
+<a href="https://www.kaspersky.com/resource-center/definitions/what-is-a-vpn">Read More</a>
