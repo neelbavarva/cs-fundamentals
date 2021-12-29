@@ -52,4 +52,13 @@ The most significant advantage of cloud firewalls is scalability. Because cloud 
 
 UTM firewalls are a special type of device that includes features of a stateful inspection firewall with anti-virus and intrusion prevention support. Such firewalls are designed to provide simplicity and ease of use. These firewalls can also add many other services, such as cloud management, etc.
 
+## Possible Attacks on Firewall
+
+.
+.
+.
+.
+
+## Basic Network Attacks
+
 
