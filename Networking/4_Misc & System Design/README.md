@@ -1,13 +1,6 @@
 ## Common Networking Commands
 
-.
-
-.
-
-.
-
-.
-
+<a href="https://www.geeksforgeeks.org/network-configuration-trouble-shooting-commands-linux/"><h4>GFG Article</h4></a>
 
 ## Difference between http:// and https://
 
