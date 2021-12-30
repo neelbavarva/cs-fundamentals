@@ -171,11 +171,9 @@ In Load Balancers VIP's are mapped with multiple Physical host IP address ... Al
 
 ## REST API vs HTTP API
 
-.
+REST refers to a set of attributes of a particular architectural style, while HTTP is a well-defined protocol that happens to exhibit many features of a RESTful system.
 
-.
-
-.
+<a href="https://www.baeldung.com/cs/rest-vs-http">Read More</a>
 
 ## Container in Computer Networks
 
