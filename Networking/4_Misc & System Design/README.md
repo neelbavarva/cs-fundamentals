@@ -81,11 +81,11 @@ In this manner, a load balancer performs the following functions:
 
 ##  Address Resolution Protocol
 
-.
+Address Resolution Protocol (ARP) is a communication protocol used to find the MAC (Media Access Control) address of a device from its IP address. This protocol is used when a device wants to communicate with another device on a Local Area Network or Ethernet.
 
-.
+![image](https://user-images.githubusercontent.com/62550592/147722677-cbe70178-913f-4ac0-9f3a-27acac88ea3f.png)
 
-.
+![image](https://user-images.githubusercontent.com/62550592/147722634-62ee9764-d982-4f9f-b14c-27b64b862d16.png)
 
 ## Horizontal vs Vertical Scaling
 
