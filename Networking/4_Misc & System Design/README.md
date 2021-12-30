@@ -161,11 +161,13 @@ When a user requests content from a website using a CDN, the CDN fetches that co
 
 ## VIP (Virtual I.P.)
 
-.
+VIP / Virtual IP is that it doesn't correspond to an actual physical network interface or port. The purpose of VIP is to provide IP addresses that can float between two or more physical network nodes and provide redundency.
 
-.
+Used in First Hop redundancy protocols ( like HSRP, GLBP, VRRP) to represent the IP as gateway for end Hosts but actually not configured on any interface rather it is shared by all devices in the configured protocol.
 
-.
+Used in applications , where an application hosted in server has an IP address on a physical subnet and application has configured with different IP.
+
+In Load Balancers VIP's are mapped with multiple Physical host IP address ... All traffic directed to VIP and Load balancer will distribute traffic to servers based on Load balancing algorithm configured.
 
 ## REST API vs HTTP API
 
