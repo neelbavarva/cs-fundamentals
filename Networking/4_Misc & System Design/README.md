@@ -249,11 +249,15 @@ Demultiplexing is achieved by using a device called Demultiplexer (DEMUX) availa
 
 ## Modem vs Router
 
-.
+### Modem
 
-.
+A modem is a device that modulates or demodulates the signal. It maintains a dedicated connection with the ISP to get the internet connection for home or business.
 
-.
+Modem connects between your computer/router and your ISP/cloud and converts the digital signal from your computer/router to analog and vice versa
+
+### Router
+
+The router is a networking device responsible for routing the data packets from source to destination over a network. It distributes or routes the internet connection from the modem to all the networking devices, either wired or wireless, such as PC, Laptop, Mobile phone, tablet, etc. It also enables multiple devices to communicate with each other over the same network.
 
 ## How Bluetooth works
 
