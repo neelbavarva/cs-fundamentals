@@ -271,4 +271,22 @@ The master is responsible for transmission control by dividing the network into 
 
 ## How Hotspot works
 
+.
+
+.
+
+.
+
+## How Email Works
+
+Email working follows the client server approach.
+
+- Person A composes the messages using a mailer program i.e. mail client and then select Send option.
+- The message is routed to Simple Mail Transfer Protocol to person B’s mail server.
+- The mail server stores the email message on disk in an area designated for person B.
+
+_The disk space area on mail server is called mail spool._
+
+## How File Transfer Works
+
 
