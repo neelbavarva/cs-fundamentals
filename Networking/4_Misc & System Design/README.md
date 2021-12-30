@@ -207,11 +207,13 @@ A VPN hides your IP address by letting the network redirect it through a special
 
 ## Router vs Gateway
 
-.
+### Router
 
-.
+A router is basically a device or a hardware which is responsible for receiving, analyzing and forwarding the data packets to other networks. A router actually determines the destination or the target IP address of the packet and thus the best way for transferring the packet is determined by the help of forwarding tables and headers. The forwarding of the data packet is done from one router to the other which basically forms a network(example: internet) until it reaches the final target node.
 
-.
+### Gateway
+
+A gateway is basically a device or a hardware which acts like a “gate” among the networks.Thus it can also be defined as a node which acts as an entrance for the other nodes in the network.It is also responsible for enabling the traffic flow within the network.Gateway uses more than one protocol for communication thus its activities are much more complex than a switch or a router. So a gateway is basically a device that is used for the communication among the networks which have a different set of protocols and is responsible for the conversion of one protocol into the other.
 
 ## NIC amd MAC Address
 
