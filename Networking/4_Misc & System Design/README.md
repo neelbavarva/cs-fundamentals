@@ -261,4 +261,14 @@ The router is a networking device responsible for routing the data packets from 
 
 ## How Bluetooth works
 
+Bluetooth enabled electronic devices connect and communicate wirelessly through shortrange devices known as Piconets. Bluetooth devices exist in small ad-hoc configurations with the ability to act either as master or slave the specification allows a mechanism for master and slave to switch their roles. Point to point configuration with one master and one slave is the simplest configuration.
+
+When more than two Bluetooth devices communicate with one another, this is called a PICONET. A Piconet can contain up to seven slaves clustered around a single master. The device that initializes establishment of the Piconet becomes the master.
+
+The master is responsible for transmission control by dividing the network into a series of time slots amongst the network members, as a part of time division multiplexing scheme which is shown below.
+
+<img src="https://www.tutorialspoint.com/wireless_communication/images/piconet.jpg" />
+
+## How Hotspot works
+
 
