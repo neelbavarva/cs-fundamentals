@@ -259,7 +259,7 @@ Modem connects between your computer/router and your ISP/cloud and converts the 
 
 The router is a networking device responsible for routing the data packets from source to destination over a network. It distributes or routes the internet connection from the modem to all the networking devices, either wired or wireless, such as PC, Laptop, Mobile phone, tablet, etc. It also enables multiple devices to communicate with each other over the same network.
 
-## How Bluetooth works
+## How Bluetooth Works
 
 Bluetooth enabled electronic devices connect and communicate wirelessly through shortrange devices known as Piconets. Bluetooth devices exist in small ad-hoc configurations with the ability to act either as master or slave the specification allows a mechanism for master and slave to switch their roles. Point to point configuration with one master and one slave is the simplest configuration.
 
@@ -269,7 +269,7 @@ The master is responsible for transmission control by dividing the network into 
 
 <img src="https://www.tutorialspoint.com/wireless_communication/images/piconet.jpg" />
 
-## How Hotspot works
+## How Hotspot Works
 
 .
 
@@ -289,4 +289,10 @@ _The disk space area on mail server is called mail spool._
 
 ## How File Transfer Works
 
+.
 
+.
+
+.
+
+## How Asynchronous Transfer Mode (ATM) Works
