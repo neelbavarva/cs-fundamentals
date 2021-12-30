@@ -89,11 +89,57 @@ Address Resolution Protocol (ARP) is a communication protocol used to find the M
 
 ## Horizontal vs Vertical Scaling
 
-.
+<img src="https://demo.cloudswitches.com/wp-content/uploads/2019/12/redswitches-blog-scaling-image.jpg" />
 
-.
+<hr>
 
-.
+### Horizontal Scaling
+
+Horizontal scaling is a strategy used to enhance the performance of the server node by adding more instances of the server to your existing pool of servers so that the load can be equally distributed.
+
+In horizontal scaling, we do not change the capacity of the individual server, but we decrease the load on the server. Horizontal scalability is achieved with the help of a distributed file system, clustering, and load – balancing.
+
+<strong>Advantages of Horizontal Scaling:</strong>
+
+- Easily scalable tools
+- Supporting linear amplifies the capacity
+- Easier to run fault-tolerance
+- Easy to upgrade
+- Better use of smaller systems
+- Cost of implementing is less expensive compared to scaling-up
+
+<strong>Disadvantages of Horizontal Scaling:</strong>
+
+- Architectural design is highly complicated
+- High licensing fees
+- High utility costs such (cooling and electricity)
+- Bigger footprint and impact on the data center
+- Extra networking equipment such as routers and switches are required
+
+### Vertical Scaling
+
+Vertical Scaling is an attempt to increase the capacity of a single machine. Here the resources such as processing power, storage, memory, and more are added to an existing work unit.
+
+Vertical Scaling is done to increase the capacity of existing hardware or software by adding resources. It can enhance your server without manipulating your code. But it is limited by the fact that you can only get as big as the size of the server.
+
+<strong>Advantages of Vertical Scaling:</strong>
+
+- Reduced software costs.
+- Easy Implementation.
+- Licensing fees is less.
+- Consumes less power.
+- Cooling costs are lesser than horizontal scaling.
+- Application compatibility is maintained.
+
+<strong>Disadvantages of Vertical Scaling:</strong>
+
+- Limited Scaling.
+- The risk for downtime is much higher than horizontal scaling.
+- Greater risk of outages and hardware failures.
+- Severe vendor lock-in.
+- The cost of implementing is expensive.
+
+<hr>
 
 ## Caching
 
