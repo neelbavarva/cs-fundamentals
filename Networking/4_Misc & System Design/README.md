@@ -1,13 +1,6 @@
 ## Common Networking Commands
 
-.
-
-.
-
-.
-
-.
-
+<a href="https://www.geeksforgeeks.org/network-configuration-trouble-shooting-commands-linux/"><h4>GFG Article</h4></a>
 
 ## Difference between http:// and https://
 
@@ -88,19 +81,65 @@ In this manner, a load balancer performs the following functions:
 
 ##  Address Resolution Protocol
 
-.
+Address Resolution Protocol (ARP) is a communication protocol used to find the MAC (Media Access Control) address of a device from its IP address. This protocol is used when a device wants to communicate with another device on a Local Area Network or Ethernet.
 
-.
+![image](https://user-images.githubusercontent.com/62550592/147722677-cbe70178-913f-4ac0-9f3a-27acac88ea3f.png)
 
-.
+![image](https://user-images.githubusercontent.com/62550592/147722634-62ee9764-d982-4f9f-b14c-27b64b862d16.png)
 
 ## Horizontal vs Vertical Scaling
 
-.
+<img src="https://demo.cloudswitches.com/wp-content/uploads/2019/12/redswitches-blog-scaling-image.jpg" />
 
-.
+<hr>
 
-.
+### Horizontal Scaling
+
+Horizontal scaling is a strategy used to enhance the performance of the server node by adding more instances of the server to your existing pool of servers so that the load can be equally distributed.
+
+In horizontal scaling, we do not change the capacity of the individual server, but we decrease the load on the server. Horizontal scalability is achieved with the help of a distributed file system, clustering, and load – balancing.
+
+<strong>Advantages of Horizontal Scaling:</strong>
+
+- Easily scalable tools
+- Supporting linear amplifies the capacity
+- Easier to run fault-tolerance
+- Easy to upgrade
+- Better use of smaller systems
+- Cost of implementing is less expensive compared to scaling-up
+
+<strong>Disadvantages of Horizontal Scaling:</strong>
+
+- Architectural design is highly complicated
+- High licensing fees
+- High utility costs such (cooling and electricity)
+- Bigger footprint and impact on the data center
+- Extra networking equipment such as routers and switches are required
+
+### Vertical Scaling
+
+Vertical Scaling is an attempt to increase the capacity of a single machine. Here the resources such as processing power, storage, memory, and more are added to an existing work unit.
+
+Vertical Scaling is done to increase the capacity of existing hardware or software by adding resources. It can enhance your server without manipulating your code. But it is limited by the fact that you can only get as big as the size of the server.
+
+<strong>Advantages of Vertical Scaling:</strong>
+
+- Reduced software costs.
+- Easy Implementation.
+- Licensing fees is less.
+- Consumes less power.
+- Cooling costs are lesser than horizontal scaling.
+- Application compatibility is maintained.
+
+<strong>Disadvantages of Vertical Scaling:</strong>
+
+- Limited Scaling.
+- The risk for downtime is much higher than horizontal scaling.
+- Greater risk of outages and hardware failures.
+- Severe vendor lock-in.
+- The cost of implementing is expensive.
+
+<hr>
 
 ## Caching
 
@@ -122,19 +161,19 @@ When a user requests content from a website using a CDN, the CDN fetches that co
 
 ## VIP (Virtual I.P.)
 
-.
+VIP / Virtual IP is that it doesn't correspond to an actual physical network interface or port. The purpose of VIP is to provide IP addresses that can float between two or more physical network nodes and provide redundency.
 
-.
+Used in First Hop redundancy protocols ( like HSRP, GLBP, VRRP) to represent the IP as gateway for end Hosts but actually not configured on any interface rather it is shared by all devices in the configured protocol.
 
-.
+Used in applications , where an application hosted in server has an IP address on a physical subnet and application has configured with different IP.
+
+In Load Balancers VIP's are mapped with multiple Physical host IP address ... All traffic directed to VIP and Load balancer will distribute traffic to servers based on Load balancing algorithm configured.
 
 ## REST API vs HTTP API
 
-.
+REST refers to a set of attributes of a particular architectural style, while HTTP is a well-defined protocol that happens to exhibit many features of a RESTful system.
 
-.
-
-.
+<a href="https://www.baeldung.com/cs/rest-vs-http">Read More</a>
 
 ## Container in Computer Networks
 
@@ -168,11 +207,13 @@ A VPN hides your IP address by letting the network redirect it through a special
 
 ## Router vs Gateway
 
-.
+### Router
 
-.
+A router is basically a device or a hardware which is responsible for receiving, analyzing and forwarding the data packets to other networks. A router actually determines the destination or the target IP address of the packet and thus the best way for transferring the packet is determined by the help of forwarding tables and headers. The forwarding of the data packet is done from one router to the other which basically forms a network(example: internet) until it reaches the final target node.
 
-.
+### Gateway
+
+A gateway is basically a device or a hardware which acts like a “gate” among the networks.Thus it can also be defined as a node which acts as an entrance for the other nodes in the network.It is also responsible for enabling the traffic flow within the network.Gateway uses more than one protocol for communication thus its activities are much more complex than a switch or a router. So a gateway is basically a device that is used for the communication among the networks which have a different set of protocols and is responsible for the conversion of one protocol into the other.
 
 ## NIC amd MAC Address
 
@@ -208,12 +249,50 @@ Demultiplexing is achieved by using a device called Demultiplexer (DEMUX) availa
 
 ## Modem vs Router
 
+### Modem
+
+A modem is a device that modulates or demodulates the signal. It maintains a dedicated connection with the ISP to get the internet connection for home or business.
+
+Modem connects between your computer/router and your ISP/cloud and converts the digital signal from your computer/router to analog and vice versa
+
+### Router
+
+The router is a networking device responsible for routing the data packets from source to destination over a network. It distributes or routes the internet connection from the modem to all the networking devices, either wired or wireless, such as PC, Laptop, Mobile phone, tablet, etc. It also enables multiple devices to communicate with each other over the same network.
+
+## How Bluetooth Works
+
+Bluetooth enabled electronic devices connect and communicate wirelessly through shortrange devices known as Piconets. Bluetooth devices exist in small ad-hoc configurations with the ability to act either as master or slave the specification allows a mechanism for master and slave to switch their roles. Point to point configuration with one master and one slave is the simplest configuration.
+
+When more than two Bluetooth devices communicate with one another, this is called a PICONET. A Piconet can contain up to seven slaves clustered around a single master. The device that initializes establishment of the Piconet becomes the master.
+
+The master is responsible for transmission control by dividing the network into a series of time slots amongst the network members, as a part of time division multiplexing scheme which is shown below.
+
+<img src="https://www.tutorialspoint.com/wireless_communication/images/piconet.jpg" />
+
+## How Hotspot Works
+
+.
+
+.
+
+.
+
+## How Email Works
+
+Email working follows the client server approach.
+
+- Person A composes the messages using a mailer program i.e. mail client and then select Send option.
+- The message is routed to Simple Mail Transfer Protocol to person B’s mail server.
+- The mail server stores the email message on disk in an area designated for person B.
+
+_The disk space area on mail server is called mail spool._
+
+## How File Transfer Works
+
 .
 
 .
 
 .
 
-## How Bluetooth works
-
-
+## How Asynchronous Transfer Mode (ATM) Works
