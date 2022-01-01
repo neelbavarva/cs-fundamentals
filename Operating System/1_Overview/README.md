@@ -50,7 +50,10 @@ Real-time systems are used when there are time requirements that are very strict
 
 - These OSs are for applications where for time-constraint is less strict.
  
+## RAM vs ROM
 
+<strong>RAM</strong> is Random Access Memory. The information stored in this type of memory is lost when the power supply to the PC or laptop is switched off. The information stored in RAM can be checked with the help of BIOS. It is generally known as the main memory, or temporary memory or cache memory or volatile memory of the computer system.
 
+<strong>ROM</strong> is a Read-Only Memory. It is a permanent type of memory. Its content are not lost when the power supply is switched off. The computer manufacturer decides the information of ROM, and it is permanently stored at the time of manufacturing, which cannot be overwritten by the user.
 
 
