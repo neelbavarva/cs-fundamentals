@@ -72,7 +72,9 @@ DRAM is constructed using capacitors and a few transistors. In this type of RAM,
 
 The main difference between PROM EPROM and EEPROM is that PROM(Programmable Read Only Memory) is programmable only once while EPROM(Erasable Programmable Read Only Memory) is reprogrammable using ultraviolet light and EEPROM(Electrically Erasable Programmable Read-Only Memory) is reprogrammable using an electric charge.
 
+## Virtualization and Containerization
 
+<strong>Virtualization</strong> is the technology which can simulate your physical hardware (such as CPU cores, memory, disk)  and represent it as seperate machine. It has its own Guest OS, Kernel, process, drivers and  etc. Therefore, it is hardware level virtualization. Most common technology is VMware and VirtualBox
 
-
+<strong>Containerization</strong> is os-level virtualization. It doesn't simulate the entire physical machine. It just simulate the OS of your machine. Therefore multiple applications can share the same OS kernel. Container play similar roles to virtual machine but without hardware virtualization.  Most common container technology is Docker
 
