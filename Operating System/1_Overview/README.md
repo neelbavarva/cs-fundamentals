@@ -78,3 +78,10 @@ The main difference between PROM EPROM and EEPROM is that PROM(Programmable Read
 
 <strong>Containerization</strong> is os-level virtualization. It doesn't simulate the entire physical machine. It just simulate the OS of your machine. Therefore multiple applications can share the same OS kernel. Container play similar roles to virtual machine but without hardware virtualization.  Most common container technology is Docker
 
+## UEFI and BIOS
+
+Both UEFI(Unified Extensible Firmware Interface) and BIOS(Basic Input-Output system) are low-level software that starts when you boot your PC before booting your operating system, but UEFI is a more modern solution, supporting larger hard drives, faster boot times, more security features, and—conveniently—graphics and mouse cursors.
+
+BIOS is low-level software that resides in a chip on your computer’s motherboard. The BIOS loads when your computer starts up, and the BIOS is responsible for waking up your computer’s hardware components, ensures they’re functioning properly, and then runs the bootloader that boots Windows or whatever other operating system you have installed.
+
+
