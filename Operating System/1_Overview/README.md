@@ -56,4 +56,16 @@ Real-time systems are used when there are time requirements that are very strict
 
 <strong>ROM</strong> is a Read-Only Memory. It is a permanent type of memory. Its content are not lost when the power supply is switched off. The computer manufacturer decides the information of ROM, and it is permanently stored at the time of manufacturing, which cannot be overwritten by the user.
 
+## SRAM vs DRAM
+
+<strong>SRAM</strong> is a type of semiconductor memory that uses Bistable latching circuitry to store each bit. In this type of RAM, data is stored using the six transistor memory cell. Static RAM is mostly used as a cache memory for the processor (CPU).
+
+SRAM is relatively faster than other RAM types, such as DRAM. It also consumes less power. The full form of SRAM is Static Random Access Memory.
+
+<strong>DRAM</strong> is a type of RAM which allows you to stores each bit of data in a separate capacitor within a particular integrated circuit.
+
+It is a standard computer memory of any modern desktop computer. The full form of DRAM is Dynamic Random Access Memory.
+
+DRAM is constructed using capacitors and a few transistors. In this type of RAM, the capacitor is used for storing the data where bit value, which signifies that the capacitor is charged and a bit value 0, which means that the capacitor is discharged.
+
 
