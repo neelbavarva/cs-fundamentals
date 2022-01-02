@@ -68,4 +68,11 @@ It is a standard computer memory of any modern desktop computer. The full form o
 
 DRAM is constructed using capacitors and a few transistors. In this type of RAM, the capacitor is used for storing the data where bit value, which signifies that the capacitor is charged and a bit value 0, which means that the capacitor is discharged.
 
+## PROM, EPROM and EEPROM
+
+The main difference between PROM EPROM and EEPROM is that PROM(Programmable Read Only Memory) is programmable only once while EPROM(Erasable Programmable Read Only Memory) is reprogrammable using ultraviolet light and EEPROM(Electrically Erasable Programmable Read-Only Memory) is reprogrammable using an electric charge.
+
+
+
+
 
