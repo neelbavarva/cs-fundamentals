@@ -102,6 +102,13 @@ GPT stands for GUID Partition Table. It’s a new standard that’s gradually re
 
 ## Multiprogramming, Multitasking, Multithreading and Multiprocessing
 
+<strong>1. Multiprogramming</strong> – A computer running more than one program at a time (like running Excel and Firefox simultaneously).
+
+<strong>2. Multiprocessing</strong> – A computer using more than one CPU at a time.
+
+<strong>3. Multitasking</strong> – Tasks sharing a common resource (like 1 CPU).
+
+<strong>4. Multithreading</strong> is an extension of multitasking.
 
 
 
