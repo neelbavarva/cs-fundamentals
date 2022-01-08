@@ -84,4 +84,15 @@ Both UEFI(Unified Extensible Firmware Interface) and BIOS(Basic Input-Output sys
 
 BIOS is low-level software that resides in a chip on your computer’s motherboard. The BIOS loads when your computer starts up, and the BIOS is responsible for waking up your computer’s hardware components, ensures they’re functioning properly, and then runs the bootloader that boots Windows or whatever other operating system you have installed.
 
+## GPT and MBR
+
+.
+
+.
+
+.
+
+## Import Terms
+
+
 
