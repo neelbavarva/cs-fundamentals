@@ -147,4 +147,28 @@ Therefore the term “modified microkernel”
 
 ## What happens when we turn on computer?
 
+<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20201016104502/12331.png" />
+
+The boot process is something that happens every time you turn your computer on. You don’t really see it, because it happens so fast. You press the power button come back a few minutes later and Windows XP, or Windows Vista, or whatever Operating System you use is all loaded. 
+
+The BIOS chip tells it to look in a fixed place, usually on the lowest-numbered hard disk (the boot disk) for a special program called a boot loader (under Linux the boot loader is called Grub or LILO). The boot loader is pulled into memory and started. The boot loader’s job is to start the real operating system. 
+
+The bootstrap loader is stored in computer’s EPROM, ROM, or another non-volatile memory. When the computer is turned on or restarted, it first performs the power-on-self-test, also known as POST. If the POST is successful and no issues are found, the bootstrap loader will load the operating system for the computer into memory. The computer will then be able to quickly access, load, and run the operating system. 
+
+init is the last step of the kernel boot sequence. It looks for the file /etc/inittab to see if there is an entry for initdefault. It is used to determine initial run-level of the system. A run-level is used to decide the initial state of the operating system. 
+Some of the run levels are: 
+
+0 –> System Halt
+ 
+
+1 –> Single user mode
+ 
+
+3 –> Full multiuser mode with network
+ 
+
+5 –> Full multiuser mode with network and X display manager
+ 
+
+6 –> Reboot
 
