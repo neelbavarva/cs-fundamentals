@@ -117,3 +117,34 @@ Multi threading is the ability of a process to manage its use by more than one u
 
 ## Monolithic and Micro Kernel?
 
+Monolithic kernel is a single large process running entirely in a single address space. It is a single static binary file. All kernel services exist and execute in the kernel address space. The kernel can invoke functions directly. Examples of monolithic kernel based OSs: Unix, Linux.
+
+In microkernels, the kernel is broken down into separate processes, known as servers. Some of the servers run in kernel space and some run in user-space. All servers are kept separate and run in different address spaces. Servers invoke "services" from each other by sending messages via IPC (Interprocess Communication). This separation has the advantage that if one server fails, other servers can still work efficiently. Examples of microkernel based OSs: Mac OS X and Windows NT.
+
+## Does Windows have a Microkernel or Monolithic kernel?
+
+Like most Unix systems, Windows is a monolithic operating system. Why? Because the kernel mode protected memory space is shared by the operating system and device driver code.
+
+Is Windows a microkernel-based OS?
+
+- No – not using the academic definition (OS components and drivers run in their own private address spaces, layered on a primitive microkernel)
+- All kernel components live in a common shared address space
+- Therefore no protection between OS and drivers
+  
+Why not pure microkernel?
+
+- Performance – separate address spaces would mean context switching to call basic OS services
+- Most other commercial OSs (Unix, Linux, VMS etc.) have the same design
+
+
+But it does have some attributes of a microkernel OS
+
+- OS personalities running in user space as separate processes
+- Kernel-mode components don’t reach into one another’s data structures
+- Use formal interfaces to pass parameters and access and/or modify data structures
+
+Therefore the term “modified microkernel”
+
+## What happens when we turn on computer?
+
+
