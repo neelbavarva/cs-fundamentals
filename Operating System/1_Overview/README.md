@@ -86,13 +86,20 @@ BIOS is low-level software that resides in a chip on your computer’s motherboa
 
 ## GPT and MBR
 
-.
+You have to partition a disk drive before you can use it. MBR (Master Boot Record) and GPT (GUID Partition Table) are two different ways of storing the partitioning information on a drive. This information includes where partitions begin and end on the physical disk, so your operating system knows which sectors belong to each partition and which partition is bootable. This is why you have to choose MBR or GPT before creating partitions on a drive.
+
+<img src="https://www.howtogeek.com/wp-content/uploads/2014/07/mbr-or-gpt-initialize-disk.png?trim=1,1&bg-color=000&pad=1,1" />
+
+GPT stands for GUID Partition Table. It’s a new standard that’s gradually replacing MBR. It’s associated with UEFI, which replaces the clunky old BIOS with something more modern. GPT, in turn, replaces the clunky old MBR partitioning system with something more modern. It’s called GUID Partition Table because every partition on your drive has a “globally unique identifier,” or GUID—a random string so long that every GPT partition on earth likely has its own unique identifier.
+
+## Important Terms
 
 .
 
 .
 
-## Import Terms
+.
 
+## 
 
 
