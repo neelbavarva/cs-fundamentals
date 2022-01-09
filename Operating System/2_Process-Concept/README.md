@@ -16,3 +16,22 @@
 - <strong>Suspend Ready</strong> Process that was initially in the ready state but were swapped out of main memory(refer Virtual Memory topic) and placed onto external storage by scheduler are said to be in suspend ready state. The process will transition back to ready state whenever the process is again brought onto the main memory.
 - <strong>Suspend Wait or Suspend Block</strong> Similar to suspend ready but uses the process which was performing I/O operation and lack of main memory caused them to move to secondary memory. When work is finished it may go to suspend ready.
 
+## Different Types of 
+
+Processes are two types based on their types of categories. The first one which you mentioned is related to event-specific process categorization and the next categorization is based on their nature.
+
+<strong>1. Event-specific </strong>Event-specific based category of process
+
+- CPU Bound Process: Processes that spend the majority of their time simply using the CPU (doing calculations).
+- I/O Bound Process: Processes that are associated with input/output-based activity like reading from files, etc.
+
+<strong>2.</strong> Category of processes based on their <strong>nature</strong>
+
+- Independent Process: A process that does not need any other external factor to get triggered is an independent process.
+- Cooperative Process: A process that works on the occurrence of any event and the outcome affects any part of the rest of the system is a cooperating process.
+
+But, Threads have got only one classification based on their nature(Single Level Thread and Multi-Level Threads).
+
+Actually, in modern operating systems, there are two levels at which threads operate. They are system or kernel threads and user-level threads. This one is generally not the classification, though some of them freely do classify. It is a misuse.
+
+
