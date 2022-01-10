@@ -91,4 +91,6 @@ Thread takes less time to terminate as compared to process but unlike process th
 
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190522155604/Untitled-Diagram-361.png" />
 
+## Process Scheduling
+
 
