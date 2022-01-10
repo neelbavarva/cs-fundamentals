@@ -151,3 +151,6 @@ A running process may become suspended if it makes an I/O request. A suspended p
 
 I/O Bound would be slower than Memory Bound would be slower than Cache Bound would be slower than CPU Bound.
 
+## Context Switching
+
+
