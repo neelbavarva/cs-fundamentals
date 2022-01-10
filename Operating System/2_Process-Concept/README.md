@@ -113,6 +113,15 @@ The Operating System maintains the following important process scheduling queues
 
 The OS can use different policies to manage each queue (FIFO, Round Robin, Priority, etc.). The OS scheduler determines how to move processes between the ready and run queues which can only have one entry per processor core on the system; in the above diagram, it has been merged with the CPU.
 
+### Schedulers
+
+Schedulers are special system software which handle process scheduling in various ways. Their main task is to select the jobs to be submitted into the system and to decide which process to run. Schedulers are of three types −
+
+- Long-Term Scheduler
+- Short-Term Scheduler
+- Medium-Term Scheduler
+
+
 
 <hr>
 
