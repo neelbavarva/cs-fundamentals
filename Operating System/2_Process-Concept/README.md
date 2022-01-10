@@ -137,6 +137,17 @@ A running process may become suspended if it makes an I/O request. A suspended p
 
 ![image](https://user-images.githubusercontent.com/62550592/148726498-a407cd9d-ca5a-45f0-a18d-34283c70fbca.png)
 
-
 <hr>
+
+## CPU bound and I/O bound
+
+<strong>CPU Bound</strong> means the rate at which process progresses is limited by the speed of the CPU. A task that performs calculations on a small set of numbers, for example multiplying small matrices, is likely to be CPU bound.
+
+<strong>I/O Bound</strong> means the rate at which a process progresses is limited by the speed of the I/O subsystem. A task that processes data from disk, for example, counting the number of lines in a file is likely to be I/O bound.
+
+<strong>Memory bound</strong> means the rate at which a process progresses is limited by the amount memory available and the speed of that memory access. A task that processes large amounts of in memory data, for example multiplying large matrices, is likely to be Memory Bound.
+
+<strong>Cache bound</strong> means the rate at which a process progress is limited by the amount and speed of the cache available. A task that simply processes more data than fits in the cache will be cache bound.
+
+I/O Bound would be slower than Memory Bound would be slower than Cache Bound would be slower than CPU Bound.
 
