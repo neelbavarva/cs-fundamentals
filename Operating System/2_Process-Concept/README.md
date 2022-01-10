@@ -60,7 +60,7 @@ Let’s look at each memory segment and how does a process look like within memo
 
 <img src="https://www.tutorialspoint.com/assets/questions/media/29467/1.jpg" />
 
-<strongText</strong> : A process is more than the program code or a code segment is known as Text Section. This section of memory contains the executable instructions of a program. It also contains constants, macros and it is read-only segment to prevent accidentally modification of an instruction. It is also sharable so that the so that another process can use this whenever it is required.
+<strong>Text</strong> : A process is more than the program code or a code segment is known as Text Section. This section of memory contains the executable instructions of a program. It also contains constants, macros and it is read-only segment to prevent accidentally modification of an instruction. It is also sharable so that the so that another process can use this whenever it is required.
 
 <strong>Data</strong> : Next Data Section segment of memory contains the global and static variables that are initialized by the programmer prior to the execution of a program. This segment is not read-only, as the value of the variables can be changed at the runtime.
 
