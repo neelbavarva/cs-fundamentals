@@ -135,6 +135,7 @@ Short-term schedulers, also known as dispatchers, make the decision of which pro
 
 A running process may become suspended if it makes an I/O request. A suspended processes cannot make any progress towards completion. In this condition, to remove the process from memory and make space for other processes, the suspended process is moved to the secondary storage. This process is called swapping, and the process is said to be swapped out or rolled out. Swapping may be necessary to improve the process mix.
 
+![image](https://user-images.githubusercontent.com/62550592/148726498-a407cd9d-ca5a-45f0-a18d-34283c70fbca.png)
 
 
 <hr>
