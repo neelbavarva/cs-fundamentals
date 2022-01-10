@@ -49,3 +49,36 @@ A process control block (PCB) contains information about the process, i.e. regis
 - <strong>Register</strong> - These are the CPU registers which includes: accumulator, base, registers and general purpose registers.
 - <strong>Memory Limits</strong> - This field contains the information about memory management system used by operating system. This may include the page tables, segment tables etc.
 - <strong>Open Files List</strong> - This information includes the list of files opened for a process.
+
+## How does a process look like in memory?
+
+A program loaded into memory and executing is called a process. In simple, a process is a program in execution.
+
+When a program is created then it is just some pieces of Bytes which is stored in Hard Disk as a passive entity. Then the program starts loading in memory and become an active entity, when a program is double-clicked in windows or entering the name of the executable file on the command line. (i.e. a.out or prog.exe)
+
+Let’s look at each memory segment and how does a process look like within memory −
+
+<img src="https://www.tutorialspoint.com/assets/questions/media/29467/1.jpg" />
+
+<strongText</strong> : A process is more than the program code or a code segment is known as Text Section. This section of memory contains the executable instructions of a program. It also contains constants, macros and it is read-only segment to prevent accidentally modification of an instruction. It is also sharable so that the so that another process can use this whenever it is required.
+
+<strong>Data</strong> : Next Data Section segment of memory contains the global and static variables that are initialized by the programmer prior to the execution of a program. This segment is not read-only, as the value of the variables can be changed at the runtime.
+
+```
+#include<stdio.h>
+int b;//will be stored in data section
+int main(){
+   static int a; //will be stored in data section
+   return;
+}
+```
+
+<strong>Heap</strong> : To allocate memory for variables whose size cannot be statically determined by the compiler before program execution, requested by the programmer, there is a requirement of dynamic allocation of memory which is done in heap segment. It can be only determined at run-time. It is managed via system calls to malloc, calloc, free, delete etc. An C example: malloc(2) return the starting address of the 2 BYTE block which is in heap area.
+
+<strong>Stack</strong> : A process generally also includes the process stack, which contains temporary data i.e. function parameters, return addresses, and local variables. On the standard x86 architecture it grows downwards to lower addresses but on some other architectures it may grow the opposite direction.it is shown in the diagram that stack grows opposite direction of heap for avoiding overlapping problem. This section is committed to store all the data needed by a function call in a program.
+
+A stack pointer register keeps the tracks of the top of the stack i.e., how much of the stack area using by the current process, and it is modified each time a value is “pushed” onto the stack. If the stack pointer meets the heap pointer the available free memory is depleted.
+
+
+
+
