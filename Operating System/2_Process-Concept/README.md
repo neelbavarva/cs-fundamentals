@@ -79,6 +79,16 @@ int main(){
 
 A stack pointer register keeps the tracks of the top of the stack i.e., how much of the stack area using by the current process, and it is modified each time a value is “pushed” onto the stack. If the stack pointer meets the heap pointer the available free memory is depleted.
 
+## Process and Thread
 
+<strong>Process</strong> : Process are basically the programs which are dispatched from the ready state and are scheduled in the CPU for execution. PCB(Process Control Block) holds the concept of process. A process can create other processes which are known as Child Processes. The process takes more time to terminate and it is isolated means it does not share the memory with any other process. 
+
+The process can have the following states like new, ready, running, waiting, terminated, suspended. 
+
+<strong>Thread</strong> : Thread is the segment of a process means a process can have multiple threads and these multiple threads are contained within a process. A thread has three states: Running, Ready, and Blocked. 
+
+Thread takes less time to terminate as compared to process but unlike process threads do not isolate. 
+
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20190522155604/Untitled-Diagram-361.png" />
 
 
