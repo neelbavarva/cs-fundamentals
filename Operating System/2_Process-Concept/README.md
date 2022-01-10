@@ -34,4 +34,18 @@ But, Threads have got only one classification based on their nature(Single Level
 
 Actually, in modern operating systems, there are two levels at which threads operate. They are system or kernel threads and user-level threads. This one is generally not the classification, though some of them freely do classify. It is a misuse.
 
+## Process Table and Process Control Block (PCB)
 
+While creating a process the operating system performs several operations. To identify the processes, it assigns a process identification number (PID) to each process. As the operating system supports multi-programming, it needs to keep track of all the processes. For this task, the process control block (PCB) is used to track the process’s execution status. Each block of memory contains information about the process state, program counter, stack pointer, status of opened files, scheduling algorithms, etc. All these information is required and must be saved when the process is switched from one state to another. When the process makes a transition from one state to another, the operating system must update information in the process’s PCB.
+
+A process control block (PCB) contains information about the process, i.e. registers, quantum, priority, etc. The process table is an array of PCB’s, that means logically contains a PCB for all of the current processes in the system.
+
+<img width=200 src="https://media.geeksforgeeks.org/wp-content/uploads/process-table.jpg" />
+
+- <strong>Pointer</strong> - It is a stack pointer which is required to be saved when the process is switched from one state to another to retain the current position of the process.
+- <strong>Process State</strong> - It stores the respective state of the process.
+- <strong>Process Number</strong> - Every process is assigned with a unique id known as process ID or PID which stores the process identifier.
+- <strong>Program Counter</strong> - It stores the counter which contains the address of the next instruction that is to be executed for the process.
+- <strong>Register</strong> - These are the CPU registers which includes: accumulator, base, registers and general purpose registers.
+- <strong>Memory Limits</strong> - This field contains the information about memory management system used by operating system. This may include the page tables, segment tables etc.
+- <strong>Open Files List</strong> - This information includes the list of files opened for a process.
