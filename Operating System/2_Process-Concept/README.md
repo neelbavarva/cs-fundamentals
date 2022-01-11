@@ -167,4 +167,17 @@ Context Switching involves storing the context or state of a process so that it 
 
 - <strong>User and Kernel Mode Switching</strong> : A context switch may take place when a transition between the user mode and kernel mode is required in the operating system.
 
- 
+### Context Switching Steps
+
+- Save the context of the process that is currently running on the CPU. Update the process control block and other important fields.
+- Move the process control block of the above process into the relevant queue such as the ready queue, I/O queue etc.
+- Select a new process for execution.
+- Update the process control block of the selected process. This includes updating the process state to running.
+- Update the memory management data structures as required.
+-  the context of the process that was previously running when it is loaded again on the processor. This is done by loading the previous values of the process control block and registers.
+
+### Context Switching Cost
+
+Context Switching leads to an overhead cost because of TLB flushes, sharing the cache between multiple tasks, running the task scheduler etc. Context switching between two threads of the same process is faster than between two different processes as threads have the same virtual memory maps. Because of this TLB flushing is not required.
+
+ <hr>
