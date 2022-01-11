@@ -181,3 +181,12 @@ Context Switching involves storing the context or state of a process so that it 
 Context Switching leads to an overhead cost because of TLB flushes, sharing the cache between multiple tasks, running the task scheduler etc. Context switching between two threads of the same process is faster than between two different processes as threads have the same virtual memory maps. Because of this TLB flushing is not required.
 
  <hr>
+
+## Inter Process Communication (IPC)
+
+.
+
+.
+
+.
+
