@@ -153,4 +153,18 @@ I/O Bound would be slower than Memory Bound would be slower than Cache Bound wou
 
 ## Context Switching
 
+Context Switching involves storing the context or state of a process so that it can be reloaded when required and execution can be resumed from the same point as earlier. This is a feature of a multitasking operating system and allows a single CPU to be shared by multiple processes.
 
+<img src="https://www.tutorialspoint.com/operating_system/images/context_switch.jpg" />
+
+<hr> 
+
+### Context Switching Triggers
+
+- <strong>Multitasking</strong> : In a multitasking environment, a process is switched out of the CPU so another process can be run. The state of the old process is saved and the state of the new process is loaded. On a pre-emptive system, processes may be switched out by the scheduler.
+
+- <strong>Interrupt Handling</strong> : The hardware switches a part of the context when an interrupt occurs. This happens automatically. Only some of the context is changed to minimize the time required to handle the interrupt.
+
+- <strong>User and Kernel Mode Switching</strong> : A context switch may take place when a transition between the user mode and kernel mode is required in the operating system.
+
+ 
