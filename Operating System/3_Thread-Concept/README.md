@@ -67,4 +67,10 @@ Multi-threading on a multiple CPU machine increases parallelism.
 - Blocking the kernel system calls does not block the entire process.
 - Processes can be split across multiple processors.
 
+## Optimal number of threads per core
 
+If your threads don't do I/O, synchronization, etc., and there's nothing else running, 1 thread per core will get you the best performance. However that very likely not the case. Adding more threads usually helps, but after some point, they cause some performance degradation.
+
+_Not long ago, I was doing performance testing on a 2 quad-core machine running an ASP.NET application on Mono under a pretty decent load. We played with the minimum and maximum number of threads and in the end we found out that for that particular application in that particular configuration the best throughput was somewhere <strong>between 36 and 40 threads</strong>. Anything outside those boundaries performed worse._
+
+One thing for sure: 4k threads will take longer. That's a lot of context switches.
