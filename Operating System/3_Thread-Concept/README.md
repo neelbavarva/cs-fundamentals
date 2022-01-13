@@ -8,6 +8,10 @@ The CPU switches rapidly back and forth among the threads giving the illusion th
 
 As each thread has its own independent resource for process execution; thus Multiple processes can be executed parallelly by increasing the number of threads.
 
+<strong>User threads</strong> are above the kernel and without kernel support. These are the threads that application programmers use in their programs.
+
+<strong>Kernel threads</strong> are supported within the kernel of the OS itself. All modern OSs support kernel-level threads, allowing the kernel to perform multiple simultaneous tasks and/or to service multiple kernel system calls simultaneously.
+
 ## Benefits of Multithreading
 
 <strong>1. Responsiveness</strong> : Multithreading in an interactive application may allow a program to continue running even if a part of it is blocked or is performing a lengthy operation, thereby increasing responsiveness to the user.
@@ -36,5 +40,31 @@ Multi-threading on a multiple CPU machine increases parallelism.
 3. Computer Games - You have various objects like cars, humans, birds which are implemented as separate threads. Also playing the background music at the same time as playing the game is an example of multithreading.
 4. Text Editors - When you are typing in an editor, spell-checking, formatting of text and saving the text are done concurrently by multiple threads. The same applies for Word processors also.
 5. IDE - IDEs like Android Studio run multiple threads at the same time. You can open multiple programs at the same time. It also gives suggestions on the completion of a command which is a separate thread.
+
+## Multithreading Models
+
+- Many to One Model
+- One to One Model
+- Many to Many Model
+
+### Many To One Model 
+
+- In the many to one model, many user-level threads are all mapped onto a single kernel thread.
+- Thread management is handled by the thread library in user space, which is efficient in nature.
+- In this case, if user-level thread libraries are implemented in the operating system in some way that the system does not support them, then the Kernel threads use this many-to-one relationship model.
+
+### One to One Model
+
+- The one to one model creates a separate kernel thread to handle each and every user thread.
+- Most implementations of this model place a limit on how many threads can be created.
+- Linux and Windows from 95 to XP implement the one-to-one model for threads.
+- This model provides more concurrency than that of many to one Model.
+
+### Many to Many Model
+
+- The many to many model multiplexes any number of user threads onto an equal or smaller number of kernel threads, combining the best features of the one-to-one and many-to-one models.
+- Users can create any number of threads.
+- Blocking the kernel system calls does not block the entire process.
+- Processes can be split across multiple processors.
 
 
