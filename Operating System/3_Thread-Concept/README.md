@@ -74,3 +74,12 @@ If your threads don't do I/O, synchronization, etc., and there's nothing else ru
 _Not long ago, I was doing performance testing on a 2 quad-core machine running an ASP.NET application on Mono under a pretty decent load. We played with the minimum and maximum number of threads and in the end we found out that for that particular application in that particular configuration the best throughput was somewhere <strong>between 36 and 40 threads</strong>. Anything outside those boundaries performed worse._
 
 One thing for sure: 4k threads will take longer. That's a lot of context switches.
+
+## Multi-Core Processors are a Headache for Multithreaded Code
+
+Multithreading is one of the most common foundations upon which developers build parallel software, but writing robust applications with multithreading is extremely hard.
+
+It might seem counter-intuitive that there are problems specific to transitioning multithreaded code to a multi-core world. Shouldn't you be able to just move the application and get the performance benefit of running threads in parallel on different processors? It's not quite that simple. It is fairly widely understood that multithreading bugs are more likely to manifest on multi-processor platforms; this post explores a couple of the reasons for this fact.
+
+<a href="https://blogs.grammatech.com/multi-core-processors-headache-for-multithreaded-code">Read More</a>
+
