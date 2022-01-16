@@ -83,3 +83,13 @@ It might seem counter-intuitive that there are problems specific to transitionin
 
 <a href="https://blogs.grammatech.com/multi-core-processors-headache-for-multithreaded-code">Read More</a>
 
+## Why are static variables considered evil?
+
+Static variables represent global state. That's hard to reason about and hard to test: if I create a new instance of an object, I can reason about its new state within tests. If I use code which is using static variables, it could be in any state - and anything could be modifying it.
+
+I could go on for quite a while, but the bigger concept to think about is that the tighter the scope of something, the easier it is to reason about. We're good at thinking about small things, but it's hard to reason about the state of a million line system if there's no modularity. This applies to all sorts of things, by the way - not just static variables.
+
+<a href="https://stackoverflow.com/questions/7026507/why-are-static-variables-considered-evil">Stackoverflow</a>
+
+
+
