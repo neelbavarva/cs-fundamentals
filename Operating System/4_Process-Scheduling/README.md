@@ -33,3 +33,34 @@ _Only conditions <strong>1 and 4</strong> apply, the scheduling is called <stron
 
 _<strong>All other</strong> scheduling are <strong>preemptive</strong>._
 
+### Advantages of Preemptive Scheduling
+
+- Preemptive scheduling method is more robust, approach so one process cannot monopolize the CPU
+- Choice of running task reconsidered after each interruption.
+- Each event cause interruption of running tasks
+- The OS makes sure that CPU usage is the same by all running process.
+- In this, the usage of CPU is the same, i.e., all the running processes will make use of CPU equally.
+- This scheduling method also improvises the average response time.
+- Preemptive Scheduling is beneficial when we use it for the multi-programming environment.
+
+### Advantages of Non-preemptive Scheduling
+
+- Offers low scheduling overhead
+- Tends to offer high throughput
+- It is conceptually very simple method
+- Less computational resources need for Scheduling
+
+### Disadvantages of Preemptive Scheduling
+
+- Need limited computational resources for Scheduling
+- Takes a higher time by the scheduler to suspend the running task, switch the context, and dispatch the new incoming task.
+- The process which has low priority needs to wait for a longer time if some high priority processes arrive continuously.
+
+### Disadvantages of Non-Preemptive Scheduling
+
+- It can lead to starvation especially for those real-time tasks
+- Bugs can cause a machine to freeze up
+- It can make real-time and priority Scheduling difficult
+- Poor response time for processes
+
+
