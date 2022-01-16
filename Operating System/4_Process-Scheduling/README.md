@@ -9,3 +9,7 @@ Burst is the amount of time required by a process or can be said the amount of t
 A CPU bursts when it is executing instructions; an I/O system bursts when it services requests to fetch information. The idea is that each component operates until it can’t.
 
 A CPU can run instructions from cache until it needs to fetch more instructions or data from memory. That ends the CPU burst and starts the I/O burst. The I/O burst read or writes data until the requested data is read/written or the space to store it cache runs out. That ends an I/O burst.
+
+## CPU Scheduling
+
+![image](https://user-images.githubusercontent.com/62550592/149648442-3ac70ff2-7091-432e-b2d6-b145e7b20b8b.png)
