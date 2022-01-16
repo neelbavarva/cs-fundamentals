@@ -63,4 +63,16 @@ _<strong>All other</strong> scheduling are <strong>preemptive</strong>._
 - It can make real-time and priority Scheduling difficult
 - Poor response time for processes
 
+<hr>
 
+## Dispatcher
+
+A dispatcher is a special program which comes into play after the scheduler. When the scheduler completes its job of selecting a process, it is the dispatcher which takes that process to the desired state/queue. The dispatcher is the module that gives a process control over the CPU after it has been selected by the short-term scheduler. This function involves the following:
+
+- Switching context
+- Switching to user mode
+- Jumping to the proper location in the user program to restart that program
+
+<strong>Dispatch latency</strong> is the time taken to stop a process and start another.
+
+_Dispatch latency is a pure overhead._
