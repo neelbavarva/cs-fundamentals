@@ -76,3 +76,11 @@ A dispatcher is a special program which comes into play after the scheduler. Whe
 <strong>Dispatch latency</strong> is the time taken to stop a process and start another.
 
 _Dispatch latency is a pure overhead._
+
+## Scheduling Criteria
+
+- ↑ CPU utilization - percentage
+- ↑ Throughput - number of processes completed per unit time
+- ↓ Turnaround time - time from submission to completion (time spent in different queues + time spent in CPU + time spent in different i/o devices)
+- ↓ Waiting time - time spent in ready queue (only)
+- ↓ Response time - time from submission to first response
