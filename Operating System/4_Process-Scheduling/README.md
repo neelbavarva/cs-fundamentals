@@ -84,3 +84,13 @@ _Dispatch latency is a pure overhead._
 - ↓ Turnaround time - time from submission to completion (time spent in different queues + time spent in CPU + time spent in different i/o devices)
 - ↓ Waiting time - time spent in ready queue (only)
 - ↓ Response time - time from submission to first response
+
+## Scheduling Algorithms
+
+- <strong>Arrival Time</strong> : Time at which the process arrives in the ready queue.
+- <strong>Completion Time</strong> : Time at which process completes its execution.
+- <strong>Burst Time</strong> : Time required by a process for CPU execution.
+- <strong>Turn Around Time</strong> : Time Difference between completion time and arrival time.
+- <strong>Turn Around Time</strong>  = Completion Time – Arrival Time
+- <strong>Waiting Time(W.T)</strong> : Time Difference between turn around time and burst time.
+- <strong>Waiting Time</strong> = Turn Around Time – Burst Time
