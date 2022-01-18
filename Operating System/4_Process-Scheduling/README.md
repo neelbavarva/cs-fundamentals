@@ -163,3 +163,23 @@ processes and 20% time for background processes)
 <img width=500 src="https://user-images.githubusercontent.com/62550592/149872652-70fdc928-c966-4e5e-a717-cfac079e9dc0.png" />
 
 ![image](https://user-images.githubusercontent.com/62550592/149872786-a7707d90-43ff-43a0-83ef-043c5982aaec.png)
+
+### Multiple processor scheduling
+
+- multiprocessor systems: homogeneous or heterogeneous
+- CPU scheduling approaches
+    - asymmetric multiprocessing 
+    - one processor performs scheduling for all
+    - symmetric multiprocessing 
+    - each processor is self-scheduling
+    - e.g. Linux supports symmetric multiprocessing
+- processor affinity –
+    - because of high cost of invalidating and repopulating caches, migration of processes
+      from one processor to another is avoided
+    - attempt is made to keep a process at a given processor
+    - hard- and soft- affinity
+- load balancing –
+    - attempt to keep all processors equally loaded
+    - pull migration, push migration, combination
+    - only for symmetric systems
+    - counteracts the benefits of processor affinity 
