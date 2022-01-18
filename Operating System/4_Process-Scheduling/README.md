@@ -162,3 +162,4 @@ processes and 20% time for background processes)
 
 <img width=500 src="https://user-images.githubusercontent.com/62550592/149872652-70fdc928-c966-4e5e-a717-cfac079e9dc0.png" />
 
+![image](https://user-images.githubusercontent.com/62550592/149872786-a7707d90-43ff-43a0-83ef-043c5982aaec.png)
