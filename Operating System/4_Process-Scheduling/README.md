@@ -183,3 +183,16 @@ processes and 20% time for background processes)
     - pull migration, push migration, combination
     - only for symmetric systems
     - counteracts the benefits of processor affinity 
+
+<hr>
+
+## Starvation
+
+Starvation is the problem that occurs when high priority processes keep executing and low priority processes get blocked for indefinite time. In heavily loaded computer system, a steady stream of higher-priority processes can prevent a low-priority process from ever getting the CPU.
+
+## Aging
+
+Aging is a technique of gradually increasing the priority of processes that wait in the system for a long time.
+
+For example, if priority range from 127(low) to 0(high), we could increase the priority of a waiting process by 1 Every 15 minutes. Eventually even a process with an initial priority of 127 would take no more than 32 hours for priority 127 process to age to a priority-0 process.
+
