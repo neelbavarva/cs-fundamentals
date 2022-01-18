@@ -94,3 +94,71 @@ _Dispatch latency is a pure overhead._
 - <strong>Turn Around Time</strong>  = Completion Time – Arrival Time
 - <strong>Waiting Time(W.T)</strong> : Time Difference between turn around time and burst time.
 - <strong>Waiting Time</strong> = Turn Around Time – Burst Time
+
+<hr>
+
+### First-come first-served (FCFS)
+
+- non-preemptive
+- high average waiting time
+- convoy effect - several small processes may need to wait if a large process is given the CPU 
+- Mode : Non-Preemptive
+- Criteria : Arrival Time
+
+### Shortest-job-first (SJF) scheduling
+
+- process with the smallest next CPU burst is selected
+- FCFS to break ties
+- more appropriate term: shortest-next-CPU-burst-first
+- optimal, but cannot be implemented 
+- Criteria : Burst Time
+
+_SJF can be either preemptive or non-preemptive._
+
+<strong>Non-Preemptive</strong> = shortest-job-first
+
+<strong>Preemptive SJF</strong> = shortest-remaining-time-first. 
+
+### Priority scheduling
+
+- CPU is allocated to the process with the highest priority
+- priority range be 0 to 7 (say), with 0 representing the highest or the lowest priority
+- priority may depend on internal factors (time limit, memory requirement, number of open
+files, etc.) and external factors (user, department, etc.)
+- may be preemptive or non-preemptive
+- SJF is a special case of priority scheduling, with priority inversely proportional to predicted
+next CPU burst length
+- may cause starvation, i.e. indefinite blocking of processes
+- aging: gradually increase the priority of a process waiting for a long time
+- priority inversion: a low-priority process gets the priority of a high-priority process waiting
+for it 
+
+### Round robin (RR) scheduling
+
+- a small time quantum or time slice is defined
+- the ready queue is treated as a circular queue
+- each process is allocated the CPU for one time quantum
+- if time quantum is too large, then RR behaves like FCFS
+- if time quantum is too small, then RR behaves like processor sharing
+- rule of thumb: 80% CPU bursts should be shorter than the time quantum 
+- Mode : Preemptive
+- Criteria : Time Quantum
+
+### Multilevel queue scheduling
+
+- the ready queue is partitioned into several queues
+- a process is permanently assigned to one queue
+- each queue has its own scheduling algorithm
+- inter-queue scheduling: preemptive priority scheduling or RR (80% time for foreground
+processes and 20% time for background processes)
+
+<img width=600 src="https://user-images.githubusercontent.com/62550592/149872248-b036d2a1-71c1-435a-8351-5c982ed47157.png" />
+
+### Multilevel feedback queue scheduling
+
+- allows processes to move between queues
+- inter-queue scheduling: preemptive priority scheduling
+- a process waiting too long in a low-priority queue may be moved to a high-priority queue 
+
+<img width=500 src="https://user-images.githubusercontent.com/62550592/149872652-70fdc928-c966-4e5e-a717-cfac079e9dc0.png" />
+
